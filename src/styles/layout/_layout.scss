@@ -76,6 +76,7 @@ body
 .logo
 {
   width: $space-6x;
+  height: $space-6x;
 }
 
 .menu-toggle
@@ -142,6 +143,7 @@ body
 .app-footer
 {
   grid-area: footer;
+  border-top: $space-xs solid $neutral-darkest;
   padding: $space-xs $space-3x;
   color: $neutral-darkest;
 }
@@ -285,14 +287,18 @@ h1
 {
   display: flex;
   flex-wrap: wrap;
-  gap: $space-2x;
-  margin-top: $space-2x;
 
   .cta-icon
   {
+    margin-top: $space-2x;
     border-color: $neutral-lightest;
     background: $neutral-darkest;
     color: $neutral-lightest;
+
+    &:nth-of-type(2)
+    {
+      margin: $space-2x $space-2x 0;
+    }
 
     &:hover
     {
