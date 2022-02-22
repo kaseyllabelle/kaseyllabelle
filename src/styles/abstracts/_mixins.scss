@@ -1,0 +1,19 @@
+@mixin focus-default
+{
+  outline: $space-xs solid $accent-primary;
+  outline-offset: $space-xs;
+}
+
+@mixin focus-ghost
+{
+  outline: $space-xs solid $neutral-lightest;
+  outline-offset: $space-xs;
+}
+
+@mixin gradient-text
+{
+  background: $gradient-primary;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

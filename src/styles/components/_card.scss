@@ -1,0 +1,39 @@
+.project-card
+{
+  position: relative;
+  background: $neutral-lightest;
+  padding: $space-md;
+  text-decoration: none;
+
+  .project-card-image
+  {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card-name
+  {
+    display: inline-block;
+    margin-top: $space-md + $space-xs;
+    border-bottom: $space-xs solid transparent;
+    color: $neutral-darkest;
+  }
+
+  &:hover,
+  &:focus,
+  &:active
+  {
+    .project-card-name
+    {
+      border-color: $neutral-darkest;
+      @include gradient-text;
+      text-decoration: none;
+    }
+  }
+
+  &:focus
+  {
+    @include focus-ghost;
+  }
+}
