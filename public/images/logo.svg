@@ -1,23 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 173 207" style="enable-background:new 0 0 173 207;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#76BC21;}
-	.st1{fill:#676C72;}
-</style>
-<g>
-	<g>
-		<path class="st0" d="M122.4,175.2l-40.5-72.4l-26.2,31.7v40.7H35V34h20.6v48.4c0,5.2-0.2,20.6-0.4,25c2.4-3.6,11.7-15.3,16.3-21.2
-			L113.3,34h24L95.9,85.2l50.4,90H122.4z"/>
-	</g>
-	<g>
-		<g>
-			<path class="st1" d="M173-0.1V207h-20.2l0-186.6L35,20.5L35-0.1H173z"/>
-		</g>
-		<g>
-			<path class="st1" d="M0.2,207V-0.1h20.2l0,186.6l117.8,0l-0.1,20.6H0.2z"/>
-		</g>
-	</g>
-</g>
+<svg className="logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <path d="M135.4342,230l-32.62-44.9016V230H70V88h32.8147v78.4841l32.43-43.5586h40.4874l-44.519,53.73L176.1168,230Z"/>
+  <polygon points="230 265 35 265 35 0 0 0 0 300 230 300 230 265"/>
+  <polygon points="70 0 70 35 265 35 265 300 300 300 300 0 70 0"/>
 </svg>

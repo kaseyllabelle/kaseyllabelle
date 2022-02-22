@@ -1,0 +1,32 @@
+// color palette
+$neutral-darkest: #000000;
+$neutral-lightest: #ffffff;
+$accent-primary: #0000ff;
+$gradient-primary: linear-gradient(270deg, $accent-primary, $neutral-darkest);
+
+// spacing scale
+$space-xs: 0.125rem; // 2px
+$space-sm: 0.25rem; // 4px
+$space-md: 0.5rem; // 8px
+$space-2x: 1rem; // 16px
+$space-3x: 1.5rem; // 24px
+$space-4x: 2rem; // 23px
+$space-6x: 3rem; // 48px
+$space-12x: 6.125rem; // 96px
+
+// typography
+$font-family-heading: 'Poppins', sans-serif;
+$font-family-body: 'Poppins', sans-serif;
+
+// font weights
+$font-weight-assertive: 600;
+$font-weight-subtle: 400;
+
+// font sizes
+$fs-1: 2rem; // 32px
+$fs-2: 1.5rem; // 24px
+$fs-body: 1em; // 16px
+$fs-subtle: 0.75rem; // 12px
+
+// utilities
+$menu-width: 32rem;

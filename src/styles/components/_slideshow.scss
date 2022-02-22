@@ -1,0 +1,61 @@
+.slick-container
+{
+  display: block;
+}
+
+.slick-slider
+{
+  .slick-dots
+  {
+    position: static;
+    margin-top: $space-sm;
+
+    li
+    {
+      button
+      {
+        &:hover
+        {
+          background-color: $neutral-lightest;
+
+          &::before
+          {
+            color: $neutral-darkest;
+            opacity: 1;
+          }
+        }
+
+        &:focus
+        {
+          @include focus-ghost;
+        }
+
+        &::before
+        {
+          color: $neutral-lightest;
+          opacity: 1;
+        }
+      }
+
+      &.slick-active
+      {
+        button
+        {
+          background-color: $neutral-lightest;
+
+          &::before
+          {
+            color: $neutral-darkest;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-page-imagery
+{
+  width: 100%;
+  vertical-align: bottom;
+}
