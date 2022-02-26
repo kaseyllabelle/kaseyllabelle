@@ -242,6 +242,27 @@ export const projectsData = [
   },
   {
     id: 14,
+    name: 'Caitlin J Doris',
+    description: [
+      'Caitlin J. Doris is a salon in Providence, RI where the incredibly talented and creative team helps clients look and feel their best.',
+      'I designed and developed a website inspired by the personality of the salon and team, created a simple wordmark aligned with existing brand elements, and managed the project from concept to completion.'
+    ],
+    stack: 'Illustrator, HTML, CSS, JavaScript',
+    url: `http://caitlinjdoris.com/`,
+    featuredImage: '/images/cjd/00.png',
+    images: [
+      '/images/cjd/01.png',
+      '/images/cjd/02.png',
+      '/images/cjd/03.png'
+    ],
+    filter: [
+      'Development',
+      'Graphic Design',
+      'Web Design'
+    ]
+  },
+  {
+    id: 15,
     name: 'Epsilon',
     description: [
       `Epsilon combines industry-leading identity, data science and technology to help the world’s top brands transform customer experiences into meaningful, human experiences that drive results.`,
@@ -263,7 +284,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 15,
+    id: 16,
     name: 'Wellness Check Services',
     description: [
       `Wellness Check Services is a medical technology company that provides a fully integrated solution for COVID-19 daily wellness checks used by commercial buildings, construction sites, schools, and more.`,
@@ -283,7 +304,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 16,
+    id: 17,
     name: 'Vistaprint',
     description: [
       `Vistaprint is an e-commerce company that empowers millions of customers worldwide. During my time at Vistaprint, I worked on the new visitor and returning customer homepages, the all products page, multiple versions of category and product pages, the specials page, the browser upgrade page, and the Vistaprint UI Library.`
@@ -302,7 +323,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 17,
+    id: 18,
     name: 'Lesbians Who Tech Boston',
     description: [
       `Lesbians Who Tech + Allies (LWT) is the largest LGBTQ technology community in the world — committed to visibility, intersectionality, and changing the face of technology. Working within the existing national brand guidelines, I created a sub-brand for the Boston chapter – one of the most active chapters in the country. I designed a logo, business cards for the City Directors, t-shirts and name tags for members, and event flyers. I also designed and developed a website for the Boston chapter.`
@@ -325,12 +346,12 @@ export const projectsData = [
     ]
   },
   {
-    id: 18,
+    id: 19,
     name: 'lil bit salty',
     description: [
       `lil bit salty is a side project and solution to (eventually) organizing a bunch of recipes (some original and some found).`
     ],
-    stack: 'HTML, SCSS, Flexbox, CSS Grid, Angular 9, GitHub Pages',
+    stack: 'HTML, SCSS, Angular 9',
     url: `https://kaseyllabelle.github.io/lil-bit-salty/`,
     featuredImage: '/images/lil-bit-salty/00.jpg',
     images: [
@@ -343,7 +364,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 19,
+    id: 20,
     name: 'Infinite Thanks',
     description: [
       `I designed a custom thank you card (featuring an intentionally infinite loop) for Cimpress and Vistaprint's Women In Technology group.`
@@ -359,7 +380,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 20,
+    id: 21,
     name: `Think you know CSS?`,
     description: [
       `Take this quiz to see how well you actually know CSS. Sounds nerdy in a boring way, you say? Think again, friend. Instead of simply seeing a green checkmark or a red "x" if you've answered a question correctly or not, you'll get real-time visual results. If you answer a question correctly, the styles being asked about in that particular question will be applied to the quiz. If you answer a question incorrectly, you'll be stuck with the browser's (often ugly) default styles. By the end of this quiz, you'll see exactly how well you know CSS. (For best results, use the latest version of Chrome. For hilariously awful results, use the oldest version of Internet Explorer that you can find.)`
@@ -380,7 +401,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 21,
+    id: 22,
     name: 'Drawings & Paintings',
     description: [
       `My career as a Graphic & Web Designer began when my Drawing I professor told me that I was too much of a perfectonist to be a fine artist, and that I should be a Graphic Designer instead. That said, I've never gotten over my love for the feeling of a graphite pencil or conte crayon in my hand. Here are some snapshots of my drawings and paintings.`
@@ -402,7 +423,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 22,
+    id: 23,
     name: 'Bookbinding',
     description: [
       `I love the tactile qualities of fine paper, book cloth, ribbon, and string. I also fancy working with my hands. Since I live largely in a digital world, I get my fix by creating handmade books, folders, and journals, among other things. Here are a few samples.`
@@ -420,7 +441,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 23,
+    id: 24,
     name: 'Home Is Where The Heart Is',
     description: [
       `"Home Is Where The Heart Is" is an exploration of the delicate balance between comfort and devastation.`
