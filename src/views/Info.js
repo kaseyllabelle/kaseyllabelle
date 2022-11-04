@@ -10,22 +10,22 @@ export default function Info()
       </div>
       <div className="br">
         <p className="paragraph">
-          I'm a Graphic and Web Designer and Developer living and working in the Greater Boston Area. I am passionate about UX front end development, design, art, diversity, accessibility, and&nbsp;community.
+          I live and work in the Greater Boston Area, and I wear many hats: leader, developer, accessibility specialist, and designer. I am passionate about UX front end development, design systems, web accessibility, art, diversity, and community.
         </p>
         <p className="paragraph">
-          I joined Boston Scientific as a Lead UX Front End Developer on the Experience Design & Creative team in September 2020, and was promoted to Manager of UX Front End Development in February 2022. Previously, I was a Senior UX Front End Developer at&nbsp;Epsilon.
+          I joined Boston Scientific as a Lead UX Front End Developer in September 2020, and was promoted to Manager of UX Front End Development in February 2022. Previously, I was a Senior UX Front End Developer at Epsilon.
         </p>
         <p className="paragraph">
-          In February 2020, I was invited to speak about the impact of accessibility on the user experience at Venture Café Providence's Digital Design Connect conference. I'm proud to serve as a City Director for Lesbians Who Tech Boston, and to have moderated the group's 2017 Out Leadership Panel. I've been on the other side of the panel experience, too. I was a panelist on the Lesbians Who Tech Roundtable at Wentworth Institute of Technology in November 2018, the Step up and Be a Leader panel at ACT-W Boston in August 2017, and the Women in Careers Meet and Greet panel at Grafton High School in January&nbsp;2017.
+          In February 2020, I was invited to speak about the impact of accessibility on the user experience at Venture Café Providence's Digital Design Connect conference. I'm proud to have served as a City Director for Lesbians Who Tech Boston for three years, and to have moderated the group's 2017 Out Leadership Panel. I've been on the other side of the panel experience, too. I was a panelist on the Lesbians Who Tech Roundtable at Wentworth Institute of Technology in November 2018, the Step up and Be a Leader panel at ACT-W Boston in August 2017, and the Women in Careers Meet and Greet panel at Grafton High School in January 2017.
         </p>
         <p className="paragraph">
-          I received my B.A. in Studio Arts with a concentration in Graphic Design from Salve Regina University in 2010, and I've since completed multiple continuing ed courses. Most recently, I completed O'Reilly's course on Thinking Like a Manager and graduated from Thinkful's Full Stack Flex&nbsp;program.
+          I received my B.A. in Studio Arts with a concentration in Graphic Design from Salve Regina University and graduated from Thinkful's Full Stack Flex Program. And I've since taken multiple continuing ed courses. Most recently, I completed Boston Scientific's People Leader Experience program and Deque's IAAP CPACC and WAS certification preparation curriculum.
         </p>
         <p className="paragraph">
-          I love puppies, sunshine, weird art, and puns. I have a knack for finding typos, I know how to fold a fitted sheet, and I finally figured out how to keep plants&nbsp;alive.
+          I love puppies, sunshine, weird art, and puns. I have a knack for finding typos, I know how to fold a fitted sheet, and I finally figured out how to keep plants alive.
         </p>
         <p className="paragraph">
-          Friends and colleagues describe me as: passionate, vibrant, a force, a fearless leader, a unicorn, and the most organized person they've ever&nbsp;met.
+          Friends and colleagues describe me as: passionate, vibrant, a force, a fearless leader, a unicorn, and the most organized person they've ever met.
         </p>
         <nav className="nav-social" aria-label="contact form and social media">
           <a href="https://goo.gl/forms/fcvTryc6Pryrxjfj2" target="_blank" rel="noopener noreferrer" className="cta-icon nav-social-link" aria-label="Contact form">
