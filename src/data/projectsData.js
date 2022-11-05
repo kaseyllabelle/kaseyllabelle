@@ -242,6 +242,44 @@ export const projectsData = [
   },
   {
     id: 14,
+    name: 'Anatomy',
+    description: [
+      `Anatomy is Boston Scientific's global design system. It serves as a platform-agnostic collection of principles, guidelines, components, patterns, accessibility and code standards, and resources.`,
+      `I lead the development team that builds Anatomy, acting as a manager, mentor, and hands-on contributor. My team and I build and maintain the component library, as well as the documentation site, with an accessibility-first approach.`
+    ],
+    stack: 'HTML, SCSS, React, Contentful',
+    url: `https://www.anatomydesignsystem.com/`,
+    featuredImage: '/images/ads/00.png',
+    images: [
+      '/images/ads/01.png',
+      '/images/ads/02.png',
+      '/images/ads/03.png',
+      '/images/ads/04.png'
+    ],
+    filter: [
+      'Development'
+    ]
+  },
+  {
+    id: 15,
+    name: 'Boston Scientific',
+    description: [
+      `Boston Scientific is dedicated to transforming lives through innovative medical solutions that improve the health of patients around the world.`,
+      `I iteratively developed a style system on top of AEM Core Components as stop-gap to improve the user experience, accessibility, and front-end code quality of our corporate website while we established our global design system, Anatomy.`,
+    ],
+    stack: 'HTML, SCSS, JavaScript, jQuery, AEM',
+    url: `https://www.bostonscientific.com/en-US/Home.html`,
+    featuredImage: '/images/bsc/00.png',
+    images: [
+      '/images/bsc/01.png',
+      '/images/bsc/02.png'
+    ],
+    filter: [
+      'Development'
+    ]
+  },
+  {
+    id: 16,
     name: 'Caitlin J Doris',
     description: [
       'Caitlin J. Doris is a salon in Providence, RI where the incredibly talented and creative team helps clients look and feel their best.',
@@ -262,7 +300,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 15,
+    id: 17,
     name: 'Epsilon',
     description: [
       `Epsilon combines industry-leading identity, data science and technology to help the world’s top brands transform customer experiences into meaningful, human experiences that drive results.`,
@@ -284,7 +322,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 16,
+    id: 18,
     name: 'Wellness Check Services',
     description: [
       `Wellness Check Services is a medical technology company that provides a fully integrated solution for COVID-19 daily wellness checks used by commercial buildings, construction sites, schools, and more.`,
@@ -304,7 +342,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 17,
+    id: 19,
     name: 'Vistaprint',
     description: [
       `Vistaprint is an e-commerce company that empowers millions of customers worldwide. During my time at Vistaprint, I worked on the new visitor and returning customer homepages, the all products page, multiple versions of category and product pages, the specials page, the browser upgrade page, and the Vistaprint UI Library.`
@@ -323,7 +361,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 18,
+    id: 20,
     name: 'Lesbians Who Tech Boston',
     description: [
       `Lesbians Who Tech + Allies (LWT) is the largest LGBTQ technology community in the world — committed to visibility, intersectionality, and changing the face of technology. Working within the existing national brand guidelines, I created a sub-brand for the Boston chapter – one of the most active chapters in the country. I designed a logo, business cards for the City Directors, t-shirts and name tags for members, and event flyers. I also designed and developed a website for the Boston chapter.`
@@ -346,7 +384,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 19,
+    id: 21,
     name: 'lil bit salty',
     description: [
       `lil bit salty is a side project and solution to (eventually) organizing a bunch of recipes (some original and some found).`
@@ -364,7 +402,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 20,
+    id: 22,
     name: 'Infinite Thanks',
     description: [
       `I designed a custom thank you card (featuring an intentionally infinite loop) for Cimpress and Vistaprint's Women In Technology group.`
@@ -380,7 +418,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 21,
+    id: 23,
     name: `Think you know CSS?`,
     description: [
       `Take this quiz to see how well you actually know CSS. Sounds nerdy in a boring way, you say? Think again, friend. Instead of simply seeing a green checkmark or a red "x" if you've answered a question correctly or not, you'll get real-time visual results. If you answer a question correctly, the styles being asked about in that particular question will be applied to the quiz. If you answer a question incorrectly, you'll be stuck with the browser's (often ugly) default styles. By the end of this quiz, you'll see exactly how well you know CSS. (For best results, use the latest version of Chrome. For hilariously awful results, use the oldest version of Internet Explorer that you can find.)`
@@ -401,7 +439,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 22,
+    id: 24,
     name: 'Drawings & Paintings',
     description: [
       `My career as a Graphic & Web Designer began when my Drawing I professor told me that I was too much of a perfectonist to be a fine artist, and that I should be a Graphic Designer instead. That said, I've never gotten over my love for the feeling of a graphite pencil or conte crayon in my hand. Here are some snapshots of my drawings and paintings.`
@@ -423,7 +461,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 23,
+    id: 25,
     name: 'Bookbinding',
     description: [
       `I love the tactile qualities of fine paper, book cloth, ribbon, and string. I also fancy working with my hands. Since I live largely in a digital world, I get my fix by creating handmade books, folders, and journals, among other things. Here are a few samples.`
@@ -441,7 +479,7 @@ export const projectsData = [
     ]
   },
   {
-    id: 24,
+    id: 26,
     name: 'Home Is Where The Heart Is',
     description: [
       `"Home Is Where The Heart Is" is an exploration of the delicate balance between comfort and devastation.`
