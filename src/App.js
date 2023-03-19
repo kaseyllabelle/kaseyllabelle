@@ -72,8 +72,7 @@ const App = () => {
               <li className="nav-item">
                 <NavLink 
                   to="/" 
-                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
-                  onClick={toggleMenu}
+                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
                 >
                   Projects
                 </NavLink>
@@ -81,8 +80,7 @@ const App = () => {
               <li className="nav-item">
                 <NavLink 
                   to="/info" 
-                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
-                  onClick={toggleMenu}
+                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
                 >
                   Info
                 </NavLink>
@@ -92,8 +90,7 @@ const App = () => {
                   to="/documents/kaseyllabelle_resume.pdf" 
                   className="nav-link" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
-                  onClick={toggleMenu}
+                  rel="noopener noreferrer"
                 >
                   Resume
                 </Link>
@@ -103,8 +100,7 @@ const App = () => {
                   href="https://goo.gl/forms/fcvTryc6Pryrxjfj2" 
                   className="nav-link" 
                   target="_blank" 
-                  rel="noopener noreferrer" 
-                  onClick={toggleMenu}
+                  rel="noopener noreferrer"
                 >
                   Contact
                 </a>
