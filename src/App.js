@@ -67,6 +67,50 @@ const App = () => {
               <IconMenu/>
             </button>
           </header>
+          <nav className="nav-xl">
+            <ul className="nav-list">
+              <li className="nav-item">
+                <NavLink 
+                  to="/" 
+                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+                  onClick={toggleMenu}
+                >
+                  Projects
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink 
+                  to="/info" 
+                  className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+                  onClick={toggleMenu}
+                >
+                  Info
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <Link 
+                  to="/documents/kaseyllabelle_resume.pdf" 
+                  className="nav-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  onClick={toggleMenu}
+                >
+                  Resume
+                </Link>
+              </li>
+              <li className="nav-item">
+                <a 
+                  href="https://goo.gl/forms/fcvTryc6Pryrxjfj2" 
+                  className="nav-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  onClick={toggleMenu}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
           <main className="app-main">
             <Routes>
               <Route exact path="/" element={<Home />} />

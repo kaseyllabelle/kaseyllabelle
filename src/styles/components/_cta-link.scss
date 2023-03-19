@@ -1,22 +1,29 @@
 .cta-link
 {
-  border-bottom: $space-xs solid $neutral-lightest;
-  color: $neutral-lightest;
+  // border-bottom: $space-xs solid $neutral-lightest;
+  border-bottom: $space-xs solid $neutral-darkest;
+  // color: $neutral-lightest;
+  color: $neutral-darkest;
   font-weight: $font-weight-assertive;
   text-decoration: none;
 
   &:hover,
   &:active
   {
-    color: $neutral-lightest;
-    text-decoration: none;
-    border-color: $neutral-darkest;
-    background-color: $neutral-lightest;
+    // color: $neutral-lightest;
     color: $neutral-darkest;
+    text-decoration: none;
+    // border-color: $neutral-darkest;
+    border-color: $neutral-lightest;
+    // background-color: $neutral-lightest;
+    background-color: $neutral-darkest;
+    color: $neutral-darkest;
+    color: $neutral-lightest;
   }
 
   &:focus
   {
-    @include focus-ghost;
+    // @include focus-ghost;
+    @include focus-default;
   }
 }

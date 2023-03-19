@@ -7,16 +7,19 @@
 
 .filter
 {
-  border: $space-xs solid $neutral-lightest;
+  // border: $space-xs solid $neutral-lightest;
+  border: $space-xs solid $neutral-darkest;
   padding: $space-xs $space-md;
   background: transparent;
-  color: $neutral-lightest;
+  // color: $neutral-lightest;
+  color: $neutral-darkest;
   font-family: $font-family-body;
   font-size: $fs-subtle;
 
   &:focus
   {
-    @include focus-ghost;
+    // @include focus-ghost;
+    @include focus-default;
   }
 }
 
@@ -28,6 +31,8 @@
 [data-active-filter="Development"] [data-filter="Development"], 
 [data-active-filter="Fine Art"] [data-filter="Fine Art"]
 {
-  background: $neutral-lightest;
-  color: $neutral-darkest;
+  // background: $neutral-lightest;
+  // color: $neutral-darkest;
+  background: $neutral-darkest;
+  color: $neutral-lightest;
 }

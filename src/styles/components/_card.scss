@@ -1,9 +1,26 @@
 .project-card
 {
   position: relative;
-  background: $neutral-lightest;
-  padding: $space-md;
+  margin-top: $space-6x;
+  border-bottom: $space-xs solid $neutral-darkest;
+  // background: $neutral-lightest;
+  // padding: $space-md;
+  padding: 0 0 $space-2x 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: $space-3x;
+
+  // &:not(:first-of-type)
+  // {
+  //   margin-top: $space-6x;
+  // }
+
+  &:first-of-type
+  {
+    margin-top: $space-3x;
+  }
 
   .project-card-image
   {
@@ -15,9 +32,11 @@
   .project-card-name
   {
     display: inline-block;
-    margin-top: $space-md + $space-xs;
-    border-bottom: $space-xs solid transparent;
+    margin-top: $space-2x;
+    // border-bottom: $space-xs solid transparent;
     color: $neutral-darkest;
+    font-size: 2.5rem; // TODO: put this in a scale
+    transform: translateY(-12px); // TODO: convert to rems
   }
 
   &:hover,
@@ -26,14 +45,43 @@
   {
     .project-card-name
     {
-      border-color: $neutral-darkest;
-      @include gradient-text;
+      // border-color: $neutral-darkest;
+      // @include gradient-text;
       text-decoration: none;
+    }
+    .project-card-name-dec
+    {
+      @include gradient-text;
     }
   }
 
   &:focus
   {
     @include focus-ghost;
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  .project-card
+  {
+    flex-direction: row;
+
+    &:first-of-type
+    {
+      margin-top: $space-6x;
+    }
+
+    .project-card-name
+    {
+      margin-top: 0;
+      width: 70%;
+    }
+
+    .project-card-image
+    {
+      // width: 200px;
+      width: 30%;
+    }
   }
 }

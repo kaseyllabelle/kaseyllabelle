@@ -7,10 +7,10 @@ export default function Card(props)
 
   return(
     <Link to={linkTo} onClick={() => {props.onClickProp(props.name)}} className="project-card">
-      <img src={props.featuredImage} alt={props.name} className="project-card-image"/>
       <p className="project-card-name">
-        {props.name}
+        <span className="project-card-name-dec">{props.name}</span>
       </p>
+      <img src={props.featuredImage} alt={props.name} className="project-card-image"/>
     </Link>
   )
 }

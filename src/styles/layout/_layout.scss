@@ -26,12 +26,13 @@ html
 
 body
 {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   height: 100%;
   margin: 0;
   background: $neutral-lightest;
-  color: $neutral-lightest;
+  // color: $neutral-lightest;
+  color: $neutral-darkest;
   font-family: $font-family-body;
   font-size: $fs-body;
   font-weight: $font-weight-subtle;
@@ -46,7 +47,7 @@ body
 .app-container
 {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 
     'header'
@@ -96,9 +97,9 @@ body
 .app-main
 {
   grid-area: main;
-  padding: $space-3x;
+  padding: $space-4x;
   overflow-y: auto;
-  background: $neutral-darkest;
+  // background: $neutral-darkest;
 }
 
 .section
@@ -108,15 +109,19 @@ body
   grid-template-rows: auto auto auto;
   grid-template-areas: 
     'title'
-    'tl'
-    'br';
+    'br'
+    'tl';
   justify-content: center;
   gap: $space-3x;
 
   &-projects
   {
     display: grid;
+    // grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-columns: 100%;
+    // grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
       'title'
@@ -143,8 +148,8 @@ body
 .app-footer
 {
   grid-area: footer;
-  border-top: $space-xs solid $neutral-darkest;
-  padding: $space-xs $space-3x;
+  // border-top: $space-xs solid $neutral-darkest;
+  padding: 0 $space-3x $space-2x;
   color: $neutral-darkest;
 }
 
@@ -176,8 +181,14 @@ body
 
 .nav
 {
+  grid-area: nav;
   flex-grow: 1;
-  overflow-y: auto;
+  // overflow-y: auto;
+
+  &-xl
+  {
+    display: none;
+  }
 }
 
 .nav-list
@@ -266,10 +277,11 @@ h1
 
 .projects
 {
-  display: grid;
-  grid-gap: $space-3x;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-flow: dense;
+  grid-area: projects;
+  // display: grid;
+  // grid-gap: $space-3x;
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // grid-auto-flow: dense;
 }
 
 // project page & info
@@ -319,23 +331,63 @@ h1
   .nav-on-canvas
   {
     width: $menu-width;
+    display: none;
   }
 
-  .nav
+  .menu-toggle
   {
-    border-left: $space-xs solid $neutral-darkest;
+    display: none !important; // TODO: fix this
+  }
+
+  // .nav
+  // {
+  //   border-left: $space-xs solid $neutral-darkest;
+  // }
+  .nav-xl
+  {
+    display: unset;
+  }
+
+  .nav-list
+  {
+    margin: 0;
+    padding: $space-4x;
+  }
+
+  .app-container
+  {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      'header main'
+      'nav main'
+      'footer main';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .app-header
+  {
+    border: 0;
   }
 
   .section
   {
     display: grid;
-    grid-template-columns: minmax(auto, 50%) minmax(auto, 90rem);
-    grid-template-rows: auto 1fr;
+    // grid-template-columns: minmax(auto, 50%) minmax(auto, 90rem);
+    // grid-template-rows: auto 1fr;
+    // grid-template-areas: 
+    //   'tl title'
+    //   'tl br';
+    // justify-content: center;
+    // column-gap: $space-3x;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: 
-      'tl title'
-      'tl br';
-    justify-content: center;
-    column-gap: $space-3x;
+      'title title'
+      'br tl';
 
     &-404
     {

@@ -20,13 +20,13 @@ export default function ProjectPage(props)
   return(
     <Fragment>
       <section className="section">
-        <ProjectPageImagery imageryProp={filteredData.images}/>
         <ProjectPageDescription
           nameProp={filteredData.name} 
           descriptionProp={filteredData.description}
           stackProp={filteredData.stack}
           urlProp={filteredData.url}
         />
+        <ProjectPageImagery imageryProp={filteredData.images}/>
       </section>
     </Fragment>
   )

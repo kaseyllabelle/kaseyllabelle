@@ -5,10 +5,10 @@ export default function Info()
   return(
     <section className="section">
       <h1 className="h1">I'm Kasey</h1>
-      <div className="tl">
+      <div className="br">
         <img src="/images/2021-headshot.jpg" className="image" alt="Kasey"/>
       </div>
-      <div className="br">
+      <div className="tl">
         <p className="paragraph">
           I live and work in the Greater Boston Area, and I wear many hats: leader, developer, accessibility specialist, and designer. I am passionate about UX front end development, design systems, web accessibility, art, diversity, and community.
         </p>
