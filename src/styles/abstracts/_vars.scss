@@ -3,6 +3,23 @@ $neutral-darkest: #000000;
 $neutral-lightest: #ffffff;
 $accent-primary: #0000ff;
 $gradient-primary: linear-gradient(270deg, $accent-primary, $neutral-darkest);
+$gradient-rainbow: linear-gradient(
+  to right,
+  #ff0059,
+  #ff0059 14%,
+  #ffbd00 14%,
+  #ffbd00 28%,
+  #91ff00 28%,
+  #91ff00 42%,
+  #00ffc2 42%,
+  #00ffc2 56%,
+  #007eff 56%,
+  #007eff 70%,
+  #b41bff 70%,
+  #b41bff 84%,
+  #ff00d8 84%,
+  #ff00d8
+);
 
 // spacing scale
 $space-xs: 0.125rem; // 2px
@@ -15,18 +32,21 @@ $space-6x: 3rem; // 48px
 $space-12x: 6.125rem; // 96px
 
 // typography
-$font-family-heading: 'Poppins', sans-serif;
-$font-family-body: 'Poppins', sans-serif;
+$font-family-heading: "Poppins", sans-serif;
+$font-family-body: "Poppins", sans-serif;
 
 // font weights
+$font-weight-800: 800;
 $font-weight-assertive: 600;
 $font-weight-subtle: 400;
 
 // font sizes
 $fs-1: 2rem; // 32px
 $fs-2: 1.5rem; // 24px
+$fs-assertive: 1.25rem; // 24px
 $fs-body: 1em; // 16px
 $fs-subtle: 0.75rem; // 12px
 
 // utilities
 $menu-width: 32rem;
+$border-primary: $space-xs solid $neutral-darkest;

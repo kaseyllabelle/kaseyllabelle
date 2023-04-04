@@ -1,29 +1,18 @@
-.cta-link
-{
-  // border-bottom: $space-xs solid $neutral-lightest;
-  border-bottom: $space-xs solid $neutral-darkest;
-  // color: $neutral-lightest;
-  color: $neutral-darkest;
-  font-weight: $font-weight-assertive;
-  text-decoration: none;
+// .link {
+//   color: $neutral-darkest;
+//   font-weight: $font-weight-assertive;
+//   text-decoration: none;
 
-  &:hover,
-  &:active
-  {
-    // color: $neutral-lightest;
-    color: $neutral-darkest;
-    text-decoration: none;
-    // border-color: $neutral-darkest;
-    border-color: $neutral-lightest;
-    // background-color: $neutral-lightest;
-    background-color: $neutral-darkest;
-    color: $neutral-darkest;
-    color: $neutral-lightest;
-  }
+//   text-transform: uppercase;
+//   letter-spacing: $space-xs;
 
-  &:focus
-  {
-    // @include focus-ghost;
-    @include focus-default;
-  }
-}
+//   &:hover,
+//   &:active {
+//     border-bottom: $border-primary;
+//     text-decoration: none;
+//   }
+
+//   &:focus {
+//     @include focus-default;
+//   }
+// }

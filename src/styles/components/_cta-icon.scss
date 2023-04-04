@@ -1,25 +1,18 @@
-.cta-icon
-{
+.cta-icon {
+  @include button;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: $space-6x;
   height: $space-6x;
-  border: $space-xs solid $neutral-darkest;
+  margin-top: $space-2x;
   padding: $space-md;
-  background: $neutral-lightest;
-  color: $neutral-darkest;
 
-  &:hover
-  {
-    border-color: transparent;
-    background: $accent-primary;
-    color: $neutral-lightest;
-    cursor: pointer;
+  &:nth-of-type(2) {
+    margin: $space-2x $space-2x 0;
   }
 
-  & > .icon
-  {
+  & > .icon {
     width: $space-3x;
     height: 100%;
   }

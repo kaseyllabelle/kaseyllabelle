@@ -1,0 +1,116 @@
+.nav {
+  grid-area: nav;
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $space-12x 0 0;
+  padding: 0 $space-4x $space-4x;
+  gap: $space-2x;
+  font-size: $fs-subtle;
+
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  color: $neutral-darkest;
+  font-family: $font-family-heading;
+  font-size: $fs-subtle;
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: $space-xs;
+
+  background-image: linear-gradient(#000 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s, background-position 0s 0.25s; /*change after the size immediately*/
+
+  &:hover,
+  &:active,
+  &.active {
+    text-decoration: none;
+    // background-position: 100% 100%; /*OR bottom right*/
+    background-position: left bottom;
+    background-size: 100% 2px;
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: $space-xs;
+    //   display: block;
+    //   // background-color: $neutral-darkest;
+    //   background-position: 100% 100%; /*OR bottom right*/
+    //   background-size: 100% 2px;
+    // }
+  }
+
+  // &:focus {
+  //   &::after {
+  //     position: absolute;
+  //     right: 0;
+  //     bottom: 0;
+  //     left: 0;
+  //     display: block;
+  //     width: 100%;
+  //     height: $space-xs;
+  //     content: "";
+  //     border-bottom-width: $space-xs;
+  //     border-bottom-style: solid;
+  //     border-image-slice: 1;
+  //     border-image-source: $gradient-rainbow;
+  //   }
+  //   outline: 0;
+  // }
+
+  @include focus-rainbow;
+}
+
+.nav-social {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: $border-primary;
+  border-top-width: 1px;
+  padding-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-primary {
+    display: unset;
+    grid-area: nav;
+  }
+
+  .page-header {
+    grid-area: page-header;
+    line-height: 48px;
+  }
+
+  .nav-list {
+    margin: 0;
+    padding: 0 $space-4x $space-4x;
+    flex-direction: column;
+    justify-content: center;
+    gap: $space-md;
+  }
+
+  .link {
+    margin-bottom: 0;
+  }
+}

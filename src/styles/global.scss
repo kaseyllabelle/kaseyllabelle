@@ -1,15 +1,17 @@
-@import 'abstracts/vars';
-@import 'abstracts/mixins';
+@import "abstracts/vars";
+@import "abstracts/mixins";
 
-@import 'base/typography';
+@import "base/typography";
 
-@import 'layout/layout';
+@import "layout/layout";
 // TODO: split into grid, header, nav
 
-@import 'components/filters';
-@import 'components/card';
-@import 'components/cta-link';
-@import 'components/cta-icon';
-@import 'components/slideshow';
+@import "components/nav";
+@import "components/filters";
+@import "components/tags";
+@import "components/card";
+@import "components/cta-link";
+@import "components/cta-icon";
+@import "components/slideshow";
 
 // TODO: split into pages/home, pages/info, pages/project-page, pages/404

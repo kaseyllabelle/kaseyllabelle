@@ -1,36 +1,36 @@
 h1,
-h2
-{
+h2,
+h3 {
   margin-bottom: 0;
   font-family: $font-family-heading;
   font-weight: $font-weight-assertive;
   line-height: 1;
 }
 
-h1
-{
+h1 {
   margin: 0;
   font-size: $fs-1;
+  line-height: $space-6x;
 }
 
-h2
-{
+h2 {
   margin-top: $space-4x;
   font-size: $fs-2;
 }
 
-p
-{
+p {
   margin-top: $space-2x;
   margin-bottom: 0;
 }
 
-a
-{
+a {
   font-weight: $font-weight-assertive;
 }
 
-.subtle
-{
+.assertive {
+  font-size: $fs-assertive;
+}
+
+.subtle {
   font-size: $fs-subtle;
 }

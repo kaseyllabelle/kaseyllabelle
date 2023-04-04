@@ -1,33 +1,35 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 
-import { projectsData } from '../data/projectsData';
+import { projectsData } from "../data/projectsData";
 
-import ProjectPageImagery from '../components/project-page.imagery';
-import ProjectPageDescription from '../components/project-page.description';
+import ProjectPageImagery from "../components/project-page.imagery";
+import ProjectPageDescription from "../components/project-page.description";
 
-export default function ProjectPage(props)
-{
-  let currentProject = window.location.href.split('/');
+export default function ProjectPage(props) {
+  let currentProject = window.location.href.split("/");
   currentProject = currentProject[currentProject.length - 1];
 
   let filteredData = {};
   projectsData.forEach((project) => {
-    if(currentProject === project.name.toLowerCase().replace(/\s/g, '-').replace(/[?.]/g, '')) {
+    if (
+      currentProject ===
+      project.name.toLowerCase().replace(/\s/g, "-").replace(/[?.]/g, "")
+    ) {
       filteredData = project;
     }
   });
 
-  return(
+  return (
     <Fragment>
       <section className="section">
         <ProjectPageDescription
-          nameProp={filteredData.name} 
+          nameProp={filteredData.name}
           descriptionProp={filteredData.description}
           stackProp={filteredData.stack}
           urlProp={filteredData.url}
         />
-        <ProjectPageImagery imageryProp={filteredData.images}/>
+        <ProjectPageImagery imageryProp={filteredData.images} />
       </section>
     </Fragment>
-  )
+  );
 }
