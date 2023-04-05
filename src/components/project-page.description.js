@@ -13,23 +13,22 @@ export default function ProjectPageDescription(props) {
 
   return (
     <Fragment>
-      <h1 className="h1">{props.nameProp}</h1>
-      <div className="br">
-        {description}
-        {props.stackProp && <p className="subtle">{props.stackProp}</p>}
-        {props.urlProp && (
-          <p className="subtle">
-            <a
-              href={props.urlProp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link"
-            >
-              View Website
-            </a>
-          </p>
-        )}
-      </div>
+      {description}
+      {props.stackProp && (
+        <p className="subtle">Created with: {props.stackProp}</p>
+      )}
+      {props.urlProp && (
+        <p className="subtle">
+          <a
+            href={props.urlProp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            View Website
+          </a>
+        </p>
+      )}
     </Fragment>
   );
 }

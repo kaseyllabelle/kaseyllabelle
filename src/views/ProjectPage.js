@@ -21,14 +21,17 @@ export default function ProjectPage(props) {
 
   return (
     <Fragment>
-      <section className="section">
-        <ProjectPageDescription
-          nameProp={filteredData.name}
-          descriptionProp={filteredData.description}
-          stackProp={filteredData.stack}
-          urlProp={filteredData.url}
-        />
-        <ProjectPageImagery imageryProp={filteredData.images} />
+      <section className="section-project">
+        <h1 className="page-header">{filteredData.name}</h1>
+        <div className="page-content">
+          <ProjectPageDescription
+            leadProp={filteredData.lead}
+            descriptionProp={filteredData.description}
+            stackProp={filteredData.stack}
+            urlProp={filteredData.url}
+          />
+          <ProjectPageImagery imageryProp={filteredData.images} />
+        </div>
       </section>
     </Fragment>
   );
