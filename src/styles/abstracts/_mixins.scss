@@ -10,10 +10,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: -4px;
-      right: -4px;
-      bottom: -4px;
-      left: -4px;
+      top: -$space-sm;
+      right: -$space-sm;
+      bottom: -$space-sm;
+      left: -$space-sm;
       border-width: $space-xs;
       border-style: solid;
       border-image-slice: 1;

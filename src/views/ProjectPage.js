@@ -21,7 +21,7 @@ export default function ProjectPage(props) {
 
   return (
     <Fragment>
-      <section className="section-project">
+      <section className="section">
         <h1 className="page-header">{filteredData.name}</h1>
         <div className="page-content">
           <ProjectPageDescription
@@ -30,8 +30,8 @@ export default function ProjectPage(props) {
             stackProp={filteredData.stack}
             urlProp={filteredData.url}
           />
-          <ProjectPageImagery imageryProp={filteredData.images} />
         </div>
+        <ProjectPageImagery imageryProp={filteredData.images} />
       </section>
     </Fragment>
   );

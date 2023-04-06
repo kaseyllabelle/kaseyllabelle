@@ -34,7 +34,7 @@ export default function Home(props) {
 
   return (
     <Fragment>
-      <section className="section-info">
+      <section className="section-work">
         <h1 className="page-header">Work</h1>
         <div className="page-content page-content-projects">
           <Filters

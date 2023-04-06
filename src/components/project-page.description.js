@@ -1,5 +1,3 @@
-// TODO: move h1 into project page view
-
 import React, { Fragment } from "react";
 
 export default function ProjectPageDescription(props) {
@@ -25,7 +23,7 @@ export default function ProjectPageDescription(props) {
             rel="noopener noreferrer"
             className="link"
           >
-            View Website
+            View website
           </a>
         </p>
       )}

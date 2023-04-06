@@ -4,15 +4,13 @@
 @import "base/typography";
 
 @import "layout/layout";
-@import "layout/layout-project";
-// TODO: split into grid, header, nav
 
+@import "components/header";
 @import "components/nav";
 @import "components/filters";
-@import "components/tags";
+@import "components/image";
 @import "components/card";
-@import "components/cta-link";
 @import "components/cta-icon";
 @import "components/slideshow";
 
-// TODO: split into pages/home, pages/info, pages/project-page, pages/404
+@import "utilities/utilities";

@@ -1,101 +1,20 @@
 .project-card {
   position: relative;
-  // border-top: $border-primary;
-  padding: $space-4x 0;
-  // padding: $space-4x 0 0 0;
-  // margin-top: $space-4x;
-  // padding: 0;
-  text-decoration: none;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: $space-3x;
-
-  padding: $space-4x;
-  margin: $space-4x 0;
+  margin: $space-4x 0 0;
   border: 1px solid $neutral-darkest;
-
-  // &:last-of-type {
-  //   border-bottom: $border-primary;
-  // }
-
-  .project-card-image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  padding: $space-4x;
 
   .project-card-tag {
-    display: block; // delete?
+    display: block;
     font-size: $fs-subtle;
     font-weight: $font-weight-subtle;
     color: $neutral-darkest;
-    letter-spacing: 2px;
+    letter-spacing: $space-xs;
     text-transform: uppercase;
   }
-
-  // working stroke to fill
-  // .project-card-name {
-  //   margin-top: $space-sm;
-  //   font-size: $fs-1;
-  //   text-decoration: none; // delete?
-  //   position: relative;
-  //   -webkit-text-fill-color: transparent;
-  //   -webkit-text-stroke-color: $neutral-darkest;
-  //   -webkit-text-stroke-width: 1px;
-
-  //   &::before {
-  //     position: absolute;
-  //     // top: 0;
-  //     left: 0;
-  //     max-width: 0;
-  //     width: 100%;
-  //     overflow: hidden;
-  //     white-space: nowrap;
-  //     content: attr(data-text);
-  //     transition: max-width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-  //     -webkit-text-fill-color: $neutral-darkest;
-  //   }
-
-  //   &:hover {
-  //     &::before {
-  //       max-width: 100%;
-  //     }
-  //   }
-  // }
-
-  // working fill to stroke
-  // .project-card-name {
-  //   margin-top: $space-sm;
-  //   font-size: $fs-1;
-  //   text-decoration: none; // delete?
-  //   position: relative;
-  //   -webkit-text-fill-color: transparent;
-  //   -webkit-text-stroke-color: $neutral-darkest;
-  //   -webkit-text-stroke-width: 1px;
-  //   letter-spacing: 1px;
-
-  //   &::before {
-  //     position: absolute;
-  //     left: 0;
-  //     max-width: 100%;
-  //     width: 100%;
-  //     overflow: hidden;
-  //     white-space: nowrap;
-  //     content: attr(data-text);
-  //     transition: max-width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-  //     transition: all 0.25s ease-out;
-  //     -webkit-text-fill-color: $neutral-darkest;
-  //     letter-spacing: 1px;
-  //   }
-
-  //   &:hover {
-  //     -webkit-text-fill-color: transparent;
-
-  //     &::before {
-  //       max-width: 0;
-  //     }
-  //   }
-  // }
 
   // working fill to stroke
   .project-card-name {
@@ -103,9 +22,8 @@
     margin-top: $space-md;
     font-size: $fs-1;
     color: $neutral-darkest;
-    text-decoration: none; // delete?
+    text-decoration: none;
     line-height: 1.25;
-    // letter-spacing: 1px;
 
     &::before {
       position: absolute;
@@ -121,23 +39,24 @@
     &::after {
       content: "";
       width: 100%;
-      height: 4px;
+      height: $space-sm;
       position: absolute;
       right: 0;
       bottom: 0;
       left: 0;
-      background-image: linear-gradient(#000 0 0);
-      background-position: 0 100%; /*OR bottom left*/
-      background-size: 0% 4px;
+      background-image: linear-gradient($neutral-darkest 0 0);
+      background-position: left bottom;
+      background-size: 0% $space-sm;
       background-repeat: no-repeat;
       transition: background-size 0.25s, background-position 0s 0.25s;
     }
 
     &:hover {
       text-decoration: none;
+
       &::after {
-        background-image: linear-gradient(#000 0 0);
-        background-size: 100% 4px;
+        background-image: linear-gradient($neutral-darkest 0 0);
+        background-size: 100% $space-sm;
       }
     }
 
@@ -145,21 +64,10 @@
       outline: 0;
       &::after {
         background-image: $gradient-rainbow;
-        background-size: 100% 4px;
+        background-size: 100% $space-sm;
       }
     }
   }
-
-  // ideas:
-  // no line, ease in line on hover
-  // smaller fill text, stroke on hover
-  // no line, ease in shadow on hover
-  // no line, scale on hover
-  // no line, decorate image on hover
-  // no line, no image, icon on hover
-  // thicker line on hover
-  // light grey fade to black
-  // black outline
 
   .project-card-description {
     margin-top: $space-md;
@@ -168,12 +76,10 @@
     font-weight: $font-weight-subtle;
   }
 
-  &:hover,
-  &:focus,
-  &:active {
-    .project-card-name {
-      text-decoration: none;
-    }
+  .project-card-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   &:focus {
@@ -184,13 +90,5 @@
 @media only screen and (min-width: 768px) {
   .project-card {
     grid-template-columns: 3fr 1fr;
-
-    // .project-card-name {
-    //   margin-top: 0;
-    // }
-
-    .project-card-image {
-      object-fit: cover;
-    }
   }
 }
