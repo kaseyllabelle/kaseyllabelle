@@ -9,11 +9,6 @@ export default function Card(props) {
     <>
       <div className="project-card">
         <div className="project-card-content">
-          {/* {props.tag && (
-            <b className="project-card-tag">
-              {props.tag}
-            </b>
-          )} */}
           <Link
             to={linkTo}
             onClick={() => {
