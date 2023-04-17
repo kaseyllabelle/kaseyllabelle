@@ -9,7 +9,9 @@ export default function Card(props) {
     <>
       <div className="project-card">
         <div className="project-card-content">
-          <b className="project-card-tag">{props.tag}</b>
+          {/* {props.tag && (
+            <b className="project-card-tag">{props.tag}</b>
+          )} */}
           <Link
             to={linkTo}
             onClick={() => {
@@ -20,7 +22,9 @@ export default function Card(props) {
           >
             {props.name}
           </Link>
-          <p className="project-card-description">{props.lead}</p>
+          {props.lead && (
+            <p className="project-card-description">{props.lead}</p>
+          )}
         </div>
         <img
           src={props.featuredImage}

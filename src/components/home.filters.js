@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Filters(props)
 {
-  const filtersArray = ['All', 'Development', 'Graphic Design', 'Web Design', 'Fine Art'];
+  const filtersArray = ['All', 'Development', 'Graphic Design', 'Web Design', 'Art'];
   const filters = filtersArray.map((item) => {
     return(
       <button

@@ -1,38 +1,50 @@
-.slick-container {
+.slick-container
+{
   display: block;
 }
 
-.slick-slider {
-  .slick-dots {
+.slick-slider
+{
+  .slick-dots
+  {
     position: static;
     margin-top: $space-sm;
 
-    li {
-      button {
-        &:hover {
+    li
+    {
+      button
+      {
+        &:hover
+        {
           background-color: $neutral-darkest;
 
-          &::before {
+          &::before
+          {
             color: $neutral-lightest;
             opacity: 1;
           }
         }
 
-        &:focus {
+        &:focus
+        {
           @include focus-rainbow;
         }
 
-        &::before {
+        &::before
+        {
           color: $neutral-darkest;
           opacity: 1;
         }
       }
 
-      &.slick-active {
-        button {
+      &.slick-active
+      {
+        button
+        {
           background-color: $neutral-darkest;
 
-          &::before {
+          &::before
+          {
             color: $neutral-lightest;
             opacity: 1;
           }
@@ -42,7 +54,8 @@
   }
 }
 
-.project-page-imagery {
+.project-page-imagery
+{
   width: 100%;
   vertical-align: bottom;
 }

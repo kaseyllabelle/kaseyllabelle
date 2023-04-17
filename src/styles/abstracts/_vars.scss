@@ -3,23 +3,7 @@ $neutral-darkest: #000000;
 $neutral-lightest: #ffffff;
 $accent-primary: #0000ff;
 $gradient-primary: linear-gradient(270deg, $accent-primary, $neutral-darkest);
-$gradient-rainbow: linear-gradient(
-  to right,
-  #ff0059,
-  #ff0059 14%,
-  #ffbd00 14%,
-  #ffbd00 28%,
-  #91ff00 28%,
-  #91ff00 42%,
-  #00ffc2 42%,
-  #00ffc2 56%,
-  #007eff 56%,
-  #007eff 70%,
-  #b41bff 70%,
-  #b41bff 84%,
-  #ff00d8 84%,
-  #ff00d8
-);
+$gradient-rainbow: linear-gradient(to right, #ff0059, #ff0059 14%, #ffbd00 14%, #ffbd00 28%, #91ff00 28%, #91ff00 42%, #00ffc2 42%, #00ffc2 56%, #007eff 56%, #007eff 70%, #b41bff 70%, #b41bff 84%, #ff00d8 84%, #ff00d8);
 
 // spacing scale
 $space-xs: 0.125rem; // 2px

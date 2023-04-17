@@ -1,13 +1,17 @@
-@mixin focus-default {
+@mixin focus-default
+{
   outline: $space-xs solid $neutral-darkest;
   outline-offset: $space-xs;
 }
 
-@mixin focus-rainbow {
-  &:focus {
+@mixin focus-rainbow
+{
+  &:focus
+  {
     outline: 0;
 
-    &::after {
+    &::after
+    {
       content: "";
       position: absolute;
       top: -$space-sm;
@@ -22,32 +26,34 @@
   }
 }
 
-@mixin button {
+@mixin button
+{
   position: relative;
   border: 1px solid $neutral-darkest;
-  background: linear-gradient(
-    to right,
-    $neutral-darkest 50%,
-    $neutral-lightest 50%
-  );
-  background-size: 200% 100%;
-  background-position: right bottom;
+  // background: linear-gradient(to right, $neutral-darkest 50%, $neutral-lightest 50%);
+  // background-size: 200% 100%;
+  // background-position: right bottom;
+  background: $neutral-lightest;
   color: $neutral-darkest;
-  transition: background-position 0.25s ease-out, color 0.25s ease-out;
+  // transition: background-position 0.25s ease-out, color 0.25s ease-out;
 
-  &:hover {
-    background-position: left bottom;
-    transition: background-position 0.25s ease-out, color 0.25s ease-out;
+  &:hover
+  {
+    // background-position: left bottom;
+    // transition: background-position 0.25s ease-out, color 0.25s ease-out;
+    background: $neutral-darkest;
     color: $neutral-lightest;
     cursor: pointer;
 
-    & .icon {
+    & .icon
+    {
       color: $neutral-lightest;
-      transition: color 0.25s ease-out;
+      // transition: color 0.25s ease-out;
     }
   }
 
-  &:focus {
+  &:focus
+  {
     @include focus-rainbow;
   }
 }
