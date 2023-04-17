@@ -1,39 +1,126 @@
 .project-card
 {
   position: relative;
-  background: $neutral-lightest;
-  padding: $space-md;
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-3x;
+  margin: $space-4x 0 0;
+  border: 1px solid $neutral-darkest;
+  padding: $space-4x;
+
+  .project-card-tag
+  {
+    display: block;
+    font-size: $fs-subtle;
+    font-weight: $font-weight-subtle;
+    color: $neutral-darkest;
+    letter-spacing: $space-xs;
+    text-transform: uppercase;
+  }
+
+  .project-card-name
+  {
+    display: inline-block;
+    margin-top: 0;
+    font-size: $fs-1;
+    color: $neutral-darkest;
+    text-decoration: none;
+    line-height: 1.25;
+
+    &::before
+    {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+      content: "";
+    }
+
+    &::after
+    {
+      content: "";
+      width: 100%;
+      height: $space-sm;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient($neutral-darkest 0 0);
+      background-position: left bottom;
+      background-size: 0% $space-sm;
+      background-repeat: no-repeat;
+    }
+
+    &:hover
+    {
+      text-decoration: none;
+
+      &::after
+      {
+        background-image: linear-gradient($neutral-darkest 0 0);
+        background-size: 100% $space-sm;
+      }
+    }
+
+    &:focus
+    {
+      outline: 0;
+
+      &::after
+      {
+        background-image: $gradient-rainbow;
+        background-size: 100% $space-sm;
+      }
+    }
+  }
+
+  .project-card-tag + .project-card-name
+  {
+    margin-top: $space-md;
+  }
+
+  .project-card-description
+  {
+    margin-top: $space-md;
+    color: $neutral-darkest;
+    font-size: $fs-body;
+    font-weight: $font-weight-subtle;
+  }
 
   .project-card-image
   {
     display: block;
     width: 100%;
     height: auto;
-  }
-
-  .project-card-name
-  {
-    display: inline-block;
-    margin-top: $space-md + $space-xs;
-    border-bottom: $space-xs solid transparent;
-    color: $neutral-darkest;
-  }
-
-  &:hover,
-  &:focus,
-  &:active
-  {
-    .project-card-name
-    {
-      border-color: $neutral-darkest;
-      @include gradient-text;
-      text-decoration: none;
-    }
+    grid-row-start: 1;
   }
 
   &:focus
   {
-    @include focus-ghost;
+    @include focus-default;
+  }
+}
+
+@media only screen and (min-width: 576px)
+{
+  .project-card
+  {
+    grid-template-columns: 2fr 1fr;
+
+    .project-card-image
+    {
+      grid-row-start: unset;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  .project-card
+  {
+    grid-template-columns: 3fr 1fr;
   }
 }

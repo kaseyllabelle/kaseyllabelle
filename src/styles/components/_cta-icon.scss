@@ -1,26 +1,24 @@
 .cta-icon
 {
+  @include button;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: $space-6x;
   height: $space-6x;
-  border: $space-xs solid $neutral-darkest;
   padding: $space-md;
-  background: $neutral-lightest;
-  color: $neutral-darkest;
-
-  &:hover
-  {
-    border-color: transparent;
-    background: $accent-primary;
-    color: $neutral-lightest;
-    cursor: pointer;
-  }
 
   & > .icon
   {
     width: $space-3x;
     height: 100%;
   }
+}
+
+.nav-social
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $space-2x;
+  gap: $space-3x;
 }

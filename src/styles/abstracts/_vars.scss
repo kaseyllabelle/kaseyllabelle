@@ -2,7 +2,15 @@
 $neutral-darkest: #000000;
 $neutral-lightest: #ffffff;
 $accent-primary: #0000ff;
+$red: #ff0059;
+$orange: #ffbd00;
+$green: #91ff00;
+$cyan: #00ffc2;
+$blue: #007eff;
+$purple: #b41bff;
+$pink: #ff00d8;
 $gradient-primary: linear-gradient(270deg, $accent-primary, $neutral-darkest);
+$gradient-rainbow: linear-gradient(to right, $red, $red 14%, $orange 14%, $orange 28%, $green 28%, $green 42%, $cyan 42%, $cyan 56%, $blue 56%, $blue 70%, $purple 70%, $purple 84%, $pink 84%, $pink);
 
 // spacing scale
 $space-xs: 0.125rem; // 2px
@@ -10,23 +18,27 @@ $space-sm: 0.25rem; // 4px
 $space-md: 0.5rem; // 8px
 $space-2x: 1rem; // 16px
 $space-3x: 1.5rem; // 24px
-$space-4x: 2rem; // 23px
+$space-4x: 2rem; // 32px
 $space-6x: 3rem; // 48px
 $space-12x: 6.125rem; // 96px
+$space-14x: 7rem; // 112px
 
 // typography
-$font-family-heading: 'Poppins', sans-serif;
-$font-family-body: 'Poppins', sans-serif;
+$font-family-heading: "Poppins", sans-serif;
+$font-family-body: "Poppins", sans-serif;
 
 // font weights
+$font-weight-800: 800;
 $font-weight-assertive: 600;
 $font-weight-subtle: 400;
 
 // font sizes
 $fs-1: 2rem; // 32px
 $fs-2: 1.5rem; // 24px
-$fs-body: 1em; // 16px
+$fs-assertive: 1.25rem; // 20px
+$fs-body: 1rem; // 16px
 $fs-subtle: 0.75rem; // 12px
 
 // utilities
 $menu-width: 32rem;
+$border-primary: $space-xs solid $neutral-darkest;

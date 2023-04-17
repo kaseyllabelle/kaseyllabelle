@@ -1,19 +1,52 @@
 @mixin focus-default
 {
-  outline: $space-xs solid $accent-primary;
+  outline: $space-xs solid $neutral-darkest;
   outline-offset: $space-xs;
 }
 
-@mixin focus-ghost
+@mixin focus-rainbow
 {
-  outline: $space-xs solid $neutral-lightest;
-  outline-offset: $space-xs;
+  &:focus
+  {
+    outline: 0;
+
+    &::after
+    {
+      content: "";
+      position: absolute;
+      top: -$space-sm;
+      right: -$space-sm;
+      bottom: -$space-sm;
+      left: -$space-sm;
+      border-width: $space-xs;
+      border-style: solid;
+      border-image-slice: 1;
+      border-image-source: $gradient-rainbow;
+    }
+  }
 }
 
-@mixin gradient-text
+@mixin button
 {
-  background: $gradient-primary;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: relative;
+  border: 1px solid $neutral-darkest;
+  background: $neutral-lightest;
+  color: $neutral-darkest;
+
+  &:hover
+  {
+    background: $neutral-darkest;
+    color: $neutral-lightest;
+    cursor: pointer;
+
+    & .icon
+    {
+      color: $neutral-lightest;
+    }
+  }
+
+  &:focus
+  {
+    @include focus-rainbow;
+  }
 }

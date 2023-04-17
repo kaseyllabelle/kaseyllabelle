@@ -16,23 +16,23 @@
       {
         &:hover
         {
-          background-color: $neutral-lightest;
+          background-color: $neutral-darkest;
 
           &::before
           {
-            color: $neutral-darkest;
+            color: $neutral-lightest;
             opacity: 1;
           }
         }
 
         &:focus
         {
-          @include focus-ghost;
+          @include focus-rainbow;
         }
 
         &::before
         {
-          color: $neutral-lightest;
+          color: $neutral-darkest;
           opacity: 1;
         }
       }
@@ -41,11 +41,11 @@
       {
         button
         {
-          background-color: $neutral-lightest;
+          background-color: $neutral-darkest;
 
           &::before
           {
-            color: $neutral-darkest;
+            color: $neutral-lightest;
             opacity: 1;
           }
         }

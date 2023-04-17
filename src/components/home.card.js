@@ -1,16 +1,36 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Card(props)
-{
-  const linkTo = `/project/${props.name.toLowerCase().replace(/\s/g, '-')}`;
+export default function Card(props) {
+  const linkTo = `/project/${props.name.toLowerCase().replace(/\s/g, "-")}`;
+  const projectName = props.name;
 
-  return(
-    <Link to={linkTo} onClick={() => {props.onClickProp(props.name)}} className="project-card">
-      <img src={props.featuredImage} alt={props.name} className="project-card-image"/>
-      <p className="project-card-name">
-        {props.name}
-      </p>
-    </Link>
-  )
+  return (
+    <>
+      <div className="project-card">
+        <div className="project-card-content">
+          <Link
+            to={linkTo}
+            onClick={() => {
+              props.onClickProp(props.name);
+            }}
+            className="project-card-name"
+            data-text={projectName}
+          >
+            {props.name}
+          </Link>
+          {props.lead && (
+            <p className="project-card-description">
+              {props.lead}
+            </p>
+          )}
+        </div>
+        <img
+          src={props.featuredImage}
+          alt={props.name}
+          className="project-card-image"
+        />
+      </div>
+    </>
+  );
 }

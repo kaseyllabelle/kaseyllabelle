@@ -7,27 +7,31 @@
 
 .filter
 {
-  border: $space-xs solid $neutral-lightest;
+  position: relative;
+  border: 1px solid $neutral-darkest;
   padding: $space-xs $space-md;
-  background: transparent;
-  color: $neutral-lightest;
-  font-family: $font-family-body;
-  font-size: $fs-subtle;
-
-  &:focus
-  {
-    @include focus-ghost;
-  }
-}
-
-.filter:hover, 
-[data-active-filter="All"] [data-filter="All"], 
-[data-active-filter="Design"] [data-filter="Design"], 
-[data-active-filter="Graphic Design"] [data-filter="Graphic Design"], 
-[data-active-filter="Web Design"] [data-filter="Web Design"], 
-[data-active-filter="Development"] [data-filter="Development"], 
-[data-active-filter="Fine Art"] [data-filter="Fine Art"]
-{
   background: $neutral-lightest;
   color: $neutral-darkest;
+  font-family: $font-family-body;
+  font-size: $fs-subtle;
+  font-weight: $font-weight-subtle;
+
+  &:hover
+  {
+    background: $neutral-darkest;
+    color: $neutral-lightest;
+    cursor: pointer;
+  }
+
+  @include focus-rainbow;
+}
+
+[data-active-filter="All"] [data-filter="All"],
+[data-active-filter="Graphic Design"] [data-filter="Graphic Design"],
+[data-active-filter="Web Design"] [data-filter="Web Design"],
+[data-active-filter="Development"] [data-filter="Development"],
+[data-active-filter="Art"] [data-filter="Art"]
+{
+  background: $neutral-darkest;
+  color: $neutral-lightest;
 }

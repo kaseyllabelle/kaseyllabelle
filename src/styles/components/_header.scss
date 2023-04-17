@@ -1,0 +1,36 @@
+.cta-logo
+{
+  display: inline-flex;
+  position: relative;
+  @include focus-rainbow;
+}
+
+.logo
+{
+  width: $space-6x;
+  height: $space-6x;
+}
+
+.menu-toggle
+{
+  position: absolute;
+  z-index: 2;
+  align-self: flex-end;
+  @include focus-rainbow;
+
+  &.collapsed
+  {
+    position: absolute;
+    right: $space-4x;
+    margin-top: $space-4x;
+    z-index: 4;
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  .menu-toggle.cta-icon
+  {
+    display: none;
+  }
+}

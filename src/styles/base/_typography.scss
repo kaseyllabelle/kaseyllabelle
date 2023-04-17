@@ -1,22 +1,18 @@
-h1,
-h2
+body
 {
-  margin-bottom: 0;
-  font-family: $font-family-heading;
-  font-weight: $font-weight-assertive;
-  line-height: 1;
+  font-family: $font-family-body;
+  font-size: $fs-body;
+  font-weight: $font-weight-subtle;
+  line-height: 1.5;
 }
 
 h1
 {
   margin: 0;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-assertive;
   font-size: $fs-1;
-}
-
-h2
-{
-  margin-top: $space-4x;
-  font-size: $fs-2;
+  line-height: $space-6x;
 }
 
 p
@@ -28,6 +24,11 @@ p
 a
 {
   font-weight: $font-weight-assertive;
+}
+
+.assertive
+{
+  font-size: $fs-assertive;
 }
 
 .subtle
