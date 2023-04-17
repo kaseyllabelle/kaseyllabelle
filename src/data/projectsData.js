@@ -25,7 +25,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    name: "AEM style system",
+    name: "AEM Style System",
     lead: `A style system for Boston Scientific's corporate websites`,
     description: [
       `Boston Scientific is dedicated to transforming lives through innovative medical solutions that improve the health of patients around the world.`,
