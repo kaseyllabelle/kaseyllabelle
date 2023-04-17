@@ -1,4 +1,4 @@
-// TODO: update page titles, add CPWA
+// TODO: update page titles
 
 import React, { useReducer, useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, NavLink, Link } from "react-router-dom";
