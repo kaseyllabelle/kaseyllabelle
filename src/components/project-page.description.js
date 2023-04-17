@@ -13,7 +13,9 @@ export default function ProjectPageDescription(props) {
     <Fragment>
       {description}
       {props.stackProp && (
-        <p className="subtle">Created with: {props.stackProp}</p>
+        <p className="subtle">
+          Created with: {props.stackProp}
+        </p>
       )}
       {props.urlProp && (
         <p className="subtle">

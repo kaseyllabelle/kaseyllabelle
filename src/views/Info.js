@@ -7,26 +7,18 @@ export default function Info() {
         <h1 className="page-header">Info</h1>
         <div className="page-content">
           <p className="assertive">
-            Hi, I'm Kasey. I am a leader, UX developer, accessibility
-            specialist, and designer with a passion for design systems,
-            inclusion, and the front of the front end.
+            Hi, I'm Kasey. I am a leader, UX developer, accessibility specialist, and designer with a passion for design systems, inclusion, and the front of the front end.
           </p>
           <div className="two-up with-rules">
-            {/* TODO: reorder these items */}
             <div className="content">
               <p className="mt-0">
-                I lead with empathy and curiosity, strive for excellence and
-                efficiency, and challenge people to think differently.
+                I lead with empathy and curiosity, strive for excellence and efficiency, and challenge people to think differently.
               </p>
               <p>
-                I love puppies, sunshine, weird art, and puns. I have a knack
-                for finding typos, I know how to fold a fitted sheet, and I
-                finally figured out how to keep plants alive.
+                I love puppies, sunshine, weird art, and puns. I have a knack for finding typos, I know how to fold a fitted sheet, and I finally figured out how to keep plants alive.
               </p>
               <p>
-                Friends and colleagues describe me as: passionate, vibrant, a
-                force, a fearless leader, a unicorn, and the most organized
-                person they've ever met.
+                Friends and colleagues describe me as: passionate, vibrant, a force, a fearless leader, a unicorn, and the most organized person they've ever met.
               </p>
             </div>
             <img
@@ -36,8 +28,7 @@ export default function Info() {
             />
           </div>
           <p>
-            If you'd like to learn more about me and my work, chat about an
-            opportunity to work together, or swap puppy pics, get in touch!
+            If you'd like to learn more about me and my work, chat about an opportunity to work together, or swap puppy pics, get in touch!
           </p>
           <nav
             className="nav-social"

@@ -41,7 +41,9 @@ export default function Home(props) {
             filterProjectsProp={filterProjectsFn}
             currentFilterProp={currentFilter}
           />
-          <div className="projects">{filteredProjects}</div>
+          <div className="projects">
+            {filteredProjects}
+          </div>
         </div>
       </section>
     </Fragment>

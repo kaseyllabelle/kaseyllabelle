@@ -10,7 +10,9 @@ export default function Card(props) {
       <div className="project-card">
         <div className="project-card-content">
           {/* {props.tag && (
-            <b className="project-card-tag">{props.tag}</b>
+            <b className="project-card-tag">
+              {props.tag}
+            </b>
           )} */}
           <Link
             to={linkTo}
@@ -23,7 +25,9 @@ export default function Card(props) {
             {props.name}
           </Link>
           {props.lead && (
-            <p className="project-card-description">{props.lead}</p>
+            <p className="project-card-description">
+              {props.lead}
+            </p>
           )}
         </div>
         <img

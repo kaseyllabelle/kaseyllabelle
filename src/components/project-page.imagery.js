@@ -28,7 +28,9 @@ export default function ProjectPageImagery(props) {
 
   return (
     <div className="page-media slick-container">
-      <Slider {...settings}>{imagery}</Slider>
+      <Slider {...settings}>
+        {imagery}
+      </Slider>
     </div>
   );
 }
