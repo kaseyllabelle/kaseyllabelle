@@ -40,6 +40,48 @@ export const projectsData = [
   },
   {
     id: 3,
+    name: "Accessibility",
+    lead: `A program to develop, scale, and sustain a culture of digital accessibility`,
+    description: [
+      `One of the reasons I joined Boston Scientific was so that I could improve web accessibility for patients and caregivers. I quickly organized a bi-weekly accessibility sync and established a cross-functional program to develop, scale, and sustain a culture of digital accessibility. I analyzed website data, Disability Equality Index questions, legal research findings, capability maturity models, and roles and responsibilities matrices to inform the program strategy and develop the charter, roadmap, goals, and recommendations for strat plan and AOP.`,
+      `I identified opportunities to shift left, and encouraged my team to lead by example. We defined accessibility as one of the foundations of our design system. And we publicly documented our position and approach, along with a wealth of resources to help others on their learning journey. We use automated tooling and conduct user testing with people with disabilities to validate our work, and prioritize stories to address the findings. Our design system accessibility scores exceed industry benchmarks, and our corporate website is improving. Our Lighthouse accessibility scores increased by 20% and our WebAIM Million ranking increased by >501K, landing Boston Scientific in the top 25% and surpassing our competitors.`,
+      `Training was, and remains, a crucial step in our path forward and, ultimately, our success. I identified an opportunity to reduce wasteful spend on redundant tooling and repurpose the budget for a pilot training program. I evaluated partners, selected instructor-led trainings, and defined cohorts and role-based learning paths for self-paced online training. Out of 860 invitees, 156 people attended the instructor-led courses. And, while we saw an average score of 97% for self-paced training, only 24% of people who were given licenses completed the training.`,
+      `While we are making progress, it's been difficult to achieve some of our larger goals as a grassroots team. Ongoing efforts include: advocating for a company-wide policy and external statement(s), mandatory company-wide training, hiring more people with disabilities and subject matter experts, establishing a capability maturity model, and developing a procurement policy.`
+    ],
+    featuredImage: "/images/accessibility/00.jpg",
+    images: [
+      "/images/accessibility/01.jpg",
+      "/images/accessibility/02.jpg",
+      "/images/accessibility/03.jpg",
+      "/images/accessibility/04.jpg",
+      "/images/accessibility/05.jpg",
+      "/images/accessibility/06.jpg",
+      "/images/accessibility/07.jpg",
+      "/images/accessibility/08.jpg",
+      "/images/accessibility/09.jpg",
+      "/images/accessibility/10.jpg",
+    ],
+    filter: ["Development", "Graphic Design"],
+  },
+  {
+    id: 4,
+    name: "Web Sustainability",
+    lead: `An approach that puts people and the planet first`,
+    description: [
+      `In 2021, I saw Tom Greenwood's talk about Zero Waste Web Design at An Event Apart's Fall Summit. The talk sparked my interest in web sustainability. I did some discovery and documented my learnings. I worked with the UX designer and writer on my team to add information about the environmental impact of waste on the web to our design system anti-patterns page. During our next design system office hour, I presented what I learned to our extended community. After my presentation, one of my direct reports expressed interest in sustainability. I encouraged them to do their own discovery, identify opportunities for us to improve our sustainability, and work with our product owner to create and prioritize stories.`,
+      `Our team continued building our collective knowledge, and defined sustainability as a foundation of our design system. We added a component to our footer that measures the grams of CO2 per view per page, and compares the page against others tested with the API. We baselined our scores and established KPIs to hold ourselves accountable. On average, our design system documentation site is 85% cleaner than other pages tested with the Website Carbon Badge API.`,
+      `I also designed a retractable banner for our design system workshops to spread knowledge and encourage discussion about the internet's carbon footprint, our sustainability metrics, and our shared responsibility for creating a more sustainable web.`
+    ],
+    featuredImage: "/images/sustainability/00.jpg",
+    images: [
+      "/images/sustainability/01.jpg",
+      "/images/sustainability/02.jpg",
+      "/images/sustainability/03.jpg",
+    ],
+    filter: ["Development", "Graphic Design"],
+  },
+  {
+    id: 5,
     name: "Blueprint",
     lead: `Epsilon's design system and component library`,
     description: [
@@ -62,7 +104,7 @@ export const projectsData = [
     tag: "Design system"
   },
   {
-    id: 4,
+    id: 6,
     name: "Wellness Check Services",
     lead: `A physical assessment screening system`,
     description: [
@@ -80,7 +122,7 @@ export const projectsData = [
     tag: "Progressive web app"
   },
   {
-    id: 5,
+    id: 7,
     name: "Caitlin J Doris",
     lead: `A wordmark and a website for a hair salon`,
     description: [
@@ -95,7 +137,7 @@ export const projectsData = [
     tag: "Design & development"
   },
   {
-    id: 6,
+    id: 8,
     name: "Lesbians Who Tech Boston",
     lead: `Branding, web design and development, marketing materials, and swag`,
     description: [
@@ -116,7 +158,7 @@ export const projectsData = [
     tag: "Design & development"
   },
   {
-    id: 7,
+    id: 9,
     name: "lil bit salty",
     lead: `A website to organize recipes`,
     description: [
@@ -130,7 +172,7 @@ export const projectsData = [
     tag: "Design & development"
   },
   {
-    id: 8,
+    id: 10,
     name: "Vistaprint",
     lead: `Highly configurable pages and components for a global e-commerce website`,
     description: [
@@ -151,7 +193,7 @@ export const projectsData = [
   },
 
   {
-    id: 9,
+    id: 11,
     name: "Love is Brewing",
     lead: `Invitations and coasters for a bridal shower`,
     description: [`I designed invitations and coasters for Ariel and Amber's brewery bridal shower.`],
@@ -165,7 +207,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 10,
+    id: 12,
     name: `YAAS`,
     lead: `Button pins and bum bags for a bachelorette party`,
     description: [`I designed a set of button pins and bum bags for Ariel and Amber's bachelorette party.`],
@@ -180,7 +222,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 11,
+    id: 13,
     name: "Dancin' in September",
     lead: `Save the dates and favors for a wedding on the 21st night of September`,
     description: [`I designed save the dates and an embossing stamp used to make leather coaster favors for Haley and Katie's wedding.`],
@@ -194,7 +236,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 12,
+    id: 14,
     name: "FFS",
     lead: `Letterpress note cards`,
     description: [`I took a letterpress class and made these note cards for the sake of fuck.`],
@@ -209,7 +251,7 @@ export const projectsData = [
   },
 
   {
-    id: 13,
+    id: 15,
     name: "Happy Purrthday",
     lead: `A puurthday card for cat people`,
     description: [`I designed this super cute purrthday card for cat people.`],
@@ -220,7 +262,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 14,
+    id: 16,
     name: "A Roaring Good Time",
     lead: `Invitations, thank you cards, and return address labels`,
     description: [
@@ -233,7 +275,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 15,
+    id: 17,
     name: "Shell-ebrate!",
     lead: `Invitations, thank you cards, and return address labels`,
     description: [
@@ -246,7 +288,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 16,
+    id: 18,
     name: "Winter ONEderland",
     lead: `Invitations, thank you cards, return address labels, and a milestone poster`,
     description: [
@@ -264,7 +306,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 17,
+    id: 19,
     name: "Howliday Cards",
     lead: `An excuse to take cute pictures of my cute pup`,
     description: [
@@ -289,7 +331,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 18,
+    id: 20,
     name: "Pride",
     lead: `Branding and marketing materials`,
     description: [
@@ -309,7 +351,7 @@ export const projectsData = [
     tag: `Branding`
   },
   {
-    id: 19,
+    id: 21,
     name: "Women In Technology",
     lead: `Branding, style guide, marketing materials, and swag`,
     description: [
@@ -336,7 +378,7 @@ export const projectsData = [
     tag: `Branding`
   },
   {
-    id: 20,
+    id: 22,
     name: "Hingham Shipyard",
     lead: `Branding and marketing materials`,
     description: [
@@ -355,7 +397,7 @@ export const projectsData = [
     tag: `Branding`
   },
   {
-    id: 21,
+    id: 23,
     name: "225 Second",
     lead: `Branding and marketing materials`,
     description: [
@@ -373,7 +415,7 @@ export const projectsData = [
     tag: `Branding`
   },
   {
-    id: 22,
+    id: 24,
     name: "Skyline",
     lead: `An annual analysis of the buildings that define Boston and Cambridge`,
     description: [
@@ -386,7 +428,7 @@ export const projectsData = [
     tag: `Design`
   },
   {
-    id: 23,
+    id: 25,
     name: "Logofolio",
     lead: `A collection of logos`,
     description: [
@@ -407,7 +449,7 @@ export const projectsData = [
     tag: `Branding`
   },
   {
-    id: 24,
+    id: 26,
     name: `Think you know CSS?`,
     lead: `A quiz about CSS`,
     description: [
@@ -427,7 +469,7 @@ export const projectsData = [
     tag: "Web development"
   },
   {
-    id: 25,
+    id: 27,
     name: "Drawings & Paintings",
     lead: `Still lifes, figure drawings, and portraits`,
     description: [
@@ -448,7 +490,7 @@ export const projectsData = [
     filter: ["Art"]
   },
   {
-    id: 26,
+    id: 28,
     name: "Bookbinding",
     lead: `Handmade books, folders, and journals`,
     description: [
@@ -465,7 +507,7 @@ export const projectsData = [
     filter: ["Art"]
   },
   {
-    id: 27,
+    id: 29,
     name: "Home Is Where The Heart Is",
     lead: `An exploration of the delicate balance between comfort and devastation`,
     description: [
