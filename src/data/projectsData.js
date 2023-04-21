@@ -34,7 +34,12 @@ export const projectsData = [
     stack: "HTML, SCSS, JavaScript, jQuery, AEM",
     url: `https://www.bostonscientific.com/en-US/Home.html`,
     featuredImage: "/images/bsc/00.png",
-    images: ["/images/bsc/01.png", "/images/bsc/02.png"],
+    images: [
+      "/images/bsc/01.png",
+      "/images/bsc/02.png",
+      "/images/bsc/03.png",
+      "/images/bsc/04.png"
+    ],
     filter: ["Development"],
     tag: "Style system"
   },
