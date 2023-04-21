@@ -38,7 +38,7 @@ export const projectsData = [
       "/images/bsc/01.png",
       "/images/bsc/02.png",
       "/images/bsc/03.png",
-      "/images/bsc/04.png"
+      "/images/bsc/04.jpg"
     ],
     filter: ["Development"],
     tag: "Style system"
