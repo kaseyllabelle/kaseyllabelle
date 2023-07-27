@@ -7,6 +7,7 @@ import { appReducer } from "./context/reducer";
 import { initialAppContext } from "./context/initializers";
 import { CURRENT_PAGE } from "./context/constants";
 
+import ScrollToTop from "./components/scroll-to-top";
 import Home from "./views/Home";
 import ProjectPage from "./views/ProjectPage";
 import Info from "./views/Info";
@@ -54,6 +55,7 @@ const App = () => {
   return (
     <appContext.Provider value={{ appStore, appStoreDispatch }}>
       <BrowserRouter>
+        <ScrollToTop />
         <div id="appContainer" className="app-container">
           <header className="app-header">
             <Link to="/" alt="Kasey L. Labelle Home Page" className="cta-logo">
