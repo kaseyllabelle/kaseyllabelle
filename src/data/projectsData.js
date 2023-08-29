@@ -36,9 +36,8 @@ export const projectsData = [
     featuredImage: "/images/bsc/00.png",
     images: [
       "/images/bsc/01.png",
-      "/images/bsc/02.png",
-      "/images/bsc/03.png",
-      "/images/bsc/04.jpg"
+      "/images/bsc/02.jpg",
+      "/images/bsc/03.jpg"
     ],
     filter: ["Development"],
     tag: "Style system"
