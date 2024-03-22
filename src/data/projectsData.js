@@ -6,10 +6,10 @@ export const projectsData = [
     lead: `Boston Scientific's design system and component library`,
     description: [
       `Anatomy is Boston Scientific's global design system. It serves as a platform-agnostic collection of principles, guidelines, components, patterns, accessibility and code standards, and resources.`,
-      `I lead the development team that builds Anatomy, acting as a manager, mentor, and hands-on contributor. My team and I build and maintain the component library, as well as the documentation site, with an accessibility-first approach.`,
+      `I lead the development team that builds Anatomy, acting as a manager, tech lead, individual contributor, accessibility specialist, and product owner. My team and I build and maintain Anatomy's design tokens, React component library, Storybook, and documentation site — all with an accessibility-first approach.`,
       `I also designed QR cards and a set of retractable banners for Anatomy workshops.`,
     ],
-    stack: "HTML, SCSS, React, Contentful, InDesign",
+    stack: "HTML, SCSS, React, TypeScript, Storybook, Chromatic, Contentful, InDesign",
     url: `https://www.anatomydesignsystem.com/`,
     featuredImage: "/images/ads/00.png",
     images: [
@@ -48,9 +48,9 @@ export const projectsData = [
     lead: `A program to develop, scale, and sustain a culture of digital accessibility`,
     description: [
       `One of the reasons I joined Boston Scientific was so that I could improve web accessibility for patients and caregivers. I quickly organized a bi-weekly accessibility sync and established a cross-functional program to develop, scale, and sustain a culture of digital accessibility. I analyzed website data, Disability Equality Index questions, legal research findings, capability maturity models, and roles and responsibilities matrices to inform the program strategy and develop the charter, roadmap, goals, and recommendations for strat plan and AOP.`,
-      `I identified opportunities to shift left, and encouraged my team to lead by example. We defined accessibility as one of the foundations of our design system. And we publicly documented our position and approach, along with a wealth of resources to help others on their learning journey. We use automated tooling and conduct user testing with people with disabilities to validate our work, and prioritize stories to address the findings. Our design system accessibility scores exceed industry benchmarks, and our corporate website is improving. Our Lighthouse accessibility scores increased by 20% and our WebAIM Million ranking increased by >501K, landing Boston Scientific in the top 25% and surpassing our competitors.`,
+      `I identified opportunities to shift left, and encouraged my team to lead by example. We defined accessibility as one of the foundations of our design system. And we publicly documented our position and approach, along with a wealth of resources to help others on their learning journey. We use automated tooling and conduct user testing with people with disabilities to validate our work, and prioritize stories to address the findings. Our design system accessibility scores exceed industry benchmarks, and our corporate website is improving. Our Lighthouse accessibility scores increased by 21% and our WebAIM Million ranking increased by >574K, landing Boston Scientific in the top 25% and surpassing our competitors.`,
       `Training was, and remains, a crucial step in our path forward and, ultimately, our success. I identified an opportunity to reduce wasteful spend on redundant tooling and repurpose the budget for a pilot training program. I evaluated partners, selected instructor-led trainings, and defined cohorts and role-based learning paths for self-paced online training. Out of 860 invitees, 156 people attended the instructor-led courses. And, while we saw an average score of 97% for self-paced training, only 24% of people who were given licenses completed the training.`,
-      `While we are making progress, it's been difficult to achieve some of our larger goals as a grassroots team. Ongoing efforts include: advocating for a company-wide policy and external statement(s), mandatory company-wide training, hiring more people with disabilities and subject matter experts, establishing a capability maturity model, and developing a procurement policy.`
+      `While we are making progress, it's been difficult to achieve some of our larger goals as a grassroots team. Ongoing efforts include: advocating for a company-wide policy, mandatory company-wide training, hiring more people with disabilities and subject matter experts, establishing a capability maturity model, and developing a procurement policy.`
     ],
     featuredImage: "/images/accessibility/00.jpg",
     images: [
@@ -73,7 +73,7 @@ export const projectsData = [
     lead: `An approach that puts people and the planet first`,
     description: [
       `In 2021, I saw Tom Greenwood's talk about Zero Waste Web Design at An Event Apart's Fall Summit. The talk sparked my interest in web sustainability. I did some discovery and documented my learnings. I worked with the UX designer and writer on my team to add information about the environmental impact of waste on the web to our design system anti-patterns page. During our next design system office hour, I presented what I learned to our extended community. After my presentation, one of my direct reports expressed interest in sustainability. I encouraged them to do their own discovery, identify opportunities for us to improve our sustainability, and work with our product owner to create and prioritize stories.`,
-      `Our team continued building our collective knowledge, and defined sustainability as a foundation of our design system. We added a component to our footer that measures the grams of CO2 per view per page, and compares the page against others tested with the API. We baselined our scores and established KPIs to hold ourselves accountable. On average, our design system documentation site is 85% cleaner than other pages tested with the Website Carbon Badge API.`,
+      `Our team continued building our collective knowledge, and defined sustainability as a foundation of our design system. We added a component to our footer that measures the grams of CO2 per view per page, and compares the page against others tested with the API. We baselined our scores and established KPIs to hold ourselves accountable. On average, our design system documentation site is 83% cleaner than other pages tested with the Website Carbon Badge API.`,
       `I also designed a retractable banner for our design system workshops to spread knowledge and encourage discussion about the internet's carbon footprint, our sustainability metrics, and our shared responsibility for creating a more sustainable web.`
     ],
     featuredImage: "/images/sustainability/00.jpg",
@@ -330,6 +330,7 @@ export const projectsData = [
       "/images/holiday-cards/09.jpg",
       "/images/holiday-cards/10.jpg", 
       "/images/holiday-cards/11.jpg",
+      "/images/holiday-cards/12.jpg",
     ],
     filter: ["Graphic Design"],
     tag: `Design`
