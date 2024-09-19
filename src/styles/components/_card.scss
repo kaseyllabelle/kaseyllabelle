@@ -8,6 +8,11 @@
   border: 1px solid $neutral-darkest;
   padding: $space-4x;
 
+  &:first-of-type
+  {
+    margin-top: 0;
+  }
+
   .project-card-tag
   {
     display: block;

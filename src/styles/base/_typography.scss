@@ -15,6 +15,24 @@ h1
   line-height: $space-6x;
 }
 
+h2
+{
+  margin-top: $space-4x;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-assertive;
+  font-size: $fs-2;
+  line-height: $space-4x;
+}
+
+h3
+{
+  margin-top: $space-4x;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-assertive;
+  font-size: $fs-3;
+  line-height: $space-4x;
+}
+
 p
 {
   margin-top: $space-2x;
@@ -26,6 +44,22 @@ a
   font-weight: $font-weight-assertive;
 }
 
+figure
+{
+  margin: 0;
+  padding: $space-2x;
+}
+
+blockquote
+{
+  margin: 0;
+
+  & p
+  {
+    margin-top: 0;
+  }
+}
+
 .assertive
 {
   font-size: $fs-assertive;
@@ -34,4 +68,30 @@ a
 .subtle
 {
   font-size: $fs-subtle;
+}
+
+.inline-link
+{
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient($neutral-darkest 0 0);
+  background-position: left bottom;
+  background-size: 100% $space-xs;
+  background-repeat: no-repeat;
+  color: $neutral-darkest;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &.active
+  {
+    background-size: 100% $space-xs;
+  }
+
+  &:focus
+  {
+    outline: 0;
+    background-image: $gradient-rainbow;
+    background-size: 100% $space-xs;
+  }
 }
