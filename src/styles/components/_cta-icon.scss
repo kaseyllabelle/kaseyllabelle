@@ -1,12 +1,12 @@
 .cta-icon
 {
-  @include button;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: $space-6x;
   height: $space-6x;
   padding: $space-md;
+  @include button;
 
   & > .icon
   {
