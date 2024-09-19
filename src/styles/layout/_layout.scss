@@ -3,8 +3,6 @@
 *:after
 {
   box-sizing: border-box;
-  // min-height: 0; // NOTE: needed for slick carousel
-  // min-width: 0; // NOTE: needed for slick carousel
 }
 
 *::selection
@@ -83,13 +81,10 @@ body
 
   &-work
   {
-    // display: grid;
-    // grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       "page-header"
       "page-content";
-    // row-gap: $space-4x;
   }
 }
 
@@ -106,7 +101,7 @@ body
   }
 }
 
-.two-up
+.layout-info
 {
   display: grid;
   grid-template-columns: 1fr;
@@ -115,6 +110,28 @@ body
   margin-bottom: $space-4x;
   border-top: 1px solid $neutral-darkest;
   padding-top: $space-4x;
+}
+
+.layout-two-up
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-2x;
+  margin-top: $space-4x;
+  margin-bottom: $space-4x;
+
+  &.logofolio
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.layout-art-masonry
+{
+  display: grid;
+  gap: $space-2x;
+  margin-top: $space-4x;
+  margin-bottom: $space-4x;
 }
 
 .app-footer
@@ -167,7 +184,7 @@ body
     line-height: $space-6x;
   }
 
-  .two-up
+  .layout-info
   {
     display: grid;
     grid-template-columns: 2fr minmax(250px, 1fr);
@@ -178,6 +195,36 @@ body
     border-bottom: 1px solid $neutral-darkest;
     padding-top: $space-4x;
     padding-bottom: $space-4x;
+  }
+
+  .layout-two-up
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .layout-art-masonry
+  {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+
+    .img-2
+    {
+      grid-row: 1 / 3;
+      grid-column: 2;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .img-3
+    {
+      grid-row: 2 / 2;
+    }
+
+    .img-4
+    {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -207,78 +254,5 @@ body
   .app-header
   {
     grid-column: 2 / 2;
-  }
-}
-
-// .logofolio
-// {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   gap: $space-2x;
-//   margin-top: $space-4x;
-//   margin-bottom: $space-4x;
-// }
-
-// .design-two-up
-// {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   gap: $space-2x;
-//   margin-top: $space-4x;
-//   margin-bottom: $space-4x;
-// }
-
-.graphic-design
-{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: $space-2x;
-  margin-top: $space-4x;
-  margin-bottom: $space-4x;
-
-  &.logofolio
-  {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.masonry
-{
-  display: grid;
-  gap: $space-2x;
-  margin-top: $space-4x;
-  margin-bottom: $space-4x;
-}
-
-@media only screen and (min-width: 1200px)
-{
-  .graphic-design
-  {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .masonry
-  {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-
-    .img-2
-    {
-      grid-row: 1 / 3;
-      grid-column: 2;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .img-3
-    {
-      grid-row: 2 / 2;
-    }
-
-    .img-4
-    {
-      height: 100%;
-      object-fit: cover;
-    }
   }
 }

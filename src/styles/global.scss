@@ -5,26 +5,10 @@
 
 @import "layout/layout";
 
-@import "components/header";
 @import "components/nav";
-
+@import "components/nav-temp-overrides";
 @import "components/image";
 @import "components/card";
 @import "components/cta-icon";
 
 @import "utilities/utilities";
-
-// dark theme
-html.dark
-{
-  body
-  {
-    background-color: $neutral-darkest;
-    color: $neutral-lightest;
-  }
-
-  .link
-  {
-    color: $neutral-lightest;
-  }
-}

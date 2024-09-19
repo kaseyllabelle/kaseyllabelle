@@ -1,0 +1,29 @@
+.menu-toggle.menu-toggle
+{
+  display: none;
+}
+
+.menu
+{
+  display: unset;
+  margin: 0 2rem;
+}
+
+.nav-list
+{
+  flex-direction: row;
+  gap: $space-2x;
+}
+
+@media only screen and (min-width: 768px)
+{
+  .menu
+  {
+    margin-top: 0;
+  }
+
+  .nav-list
+  {
+    flex-direction: column;
+  }
+}

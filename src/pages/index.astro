@@ -12,13 +12,11 @@ const pageTitle = "Work";
         allProjects.map((post) => (
           <ProjectCard
             url={post.url}
-            tag={post.frontmatter.tag}
             title={post.frontmatter.title}
             description={post.frontmatter.description}
             imageSrc={post.frontmatter.imageSrc}
             imageAlt={post.frontmatter.imageAlt}
           />
-          // <ProjectCard {...post.frontmatter} />
         ))
       }
     </div>
