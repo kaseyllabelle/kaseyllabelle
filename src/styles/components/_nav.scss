@@ -15,6 +15,12 @@
   @include focus-rainbow;
 }
 
+.logo
+{
+  width: 100%;
+  height: 100%;
+}
+
 .menu-toggle
 {
   @extend .cta-icon;
