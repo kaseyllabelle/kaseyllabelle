@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import rhino from "../images/rhino.jpeg";
+const pageTitle = "404 Page Not Found";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="page-content">
+    <p class="assertive">Oh, no! The page you're looking for is not here.</p>
+    <p class="paragraph">
+      Please accept this puppy pic as a token of my apology.
+    </p>
+    <p class="subtle">
+      <a href="/" class="link"> Go to the home page </a>
+    </p>
+  </div>
+  <Image
+    src={rhino}
+    class="page-media image-square decorative-treatment"
+    alt="Portrait"
+  />
+</BaseLayout>

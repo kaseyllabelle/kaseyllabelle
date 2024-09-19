@@ -1,0 +1,109 @@
+---
+
+layout: ../../layouts/MarkdownProjectLayout.astro
+id: 2
+title: 'Accessibility'
+description: 'A program to develop, scale, and sustain a culture of digital accessibility at Boston Scientific'
+imageSrc: "src/images/accessibility/00.jpg"
+imageAlt: "Boston Scientific logo"
+stack: 'Stack'
+
+---
+
+import { Image } from "astro:assets";
+import program from "../../images/accessibility/program.png";
+import training from "../../images/accessibility/training.png";
+import gaad from "../../images/accessibility/gaad.png";
+import shiftingLeft from "../../images/accessibility/shifting-left.jpg";
+import testing from "../../images/accessibility/testing.png";
+import tableau from "../../images/accessibility/tableau.jpg";
+import progress from "../../images/accessibility/scaling-sustaining.png";
+import impact from "../../images/accessibility/webaim.jpg";
+
+## Overview
+
+One of the reasons I joined Boston Scientific was to improve web accessibility for patients and caregivers. I established a program to develop, scale, and sustain a culture of accessibility…with no dedicated team, budget, or policy in place.
+
+## Background
+
+Boston Scientific is a global medical technology company and device manufacturer. Customers include healthcare professionals, patients and caregivers, and investors.
+- 48,000 employees worldwide, organized into 8 business units
+- $14.2 billion annual revenue
+- 37 million patients treated annually
+- 15,000 products
+
+## Team and role
+
+Accessibility was technically my “side of desk” project, but I acted as an accessibility specialist, program director, and advocate. I also served as the Leadership Sponsor for the Digital Production team's accessibility group and the Digital Accessibility Chair for the Leadership Education and Allies for Disabilities (LEAD) employee resource group's (ERG) global cabinet.
+
+## Program development
+
+I analyzed website data, Disability Equality Index questions, legal research, capability maturity models, and roles and responsibilities matrices to shape the program's strategy. I developed the charter, a 3-year plan, and annual roadmaps. I also organized a bi-weekly meeting series for a grassroots team of accessibility champions, and spun up a Jira project and Confluence space to increase visibility.
+
+<Image src={program} class="image my-4" alt="test"/>
+
+## Education and awareness
+
+I identified some redundant monitoring tools and reallocated the budget for a pilot training program. Training would establish a shared baseline of accessibility knowledge across roles, and it was a crucial step in our path forward. 
+
+I initiated a partnership with Level Access to help with the rollout, and managed the business relationship, contracts, and budget. We offered two instructor-led courses to 1,000 people and self-paced online training to 100 people. I selected the instructor-led courses, and defined role-based learning paths for the online training.
+
+<Image src={training} class="image my-4" alt="test" />
+
+The pilot training program was complemented by various resources, including code standards, checklists, tools, and articles. We also promoted external events like axe-con and organized audience-specific presentations and internal events to raise awareness and generate enthusiasm. 
+
+I approached the LEAD and Pride ERGs about co-sponsoring Hayden Kristal's GaySL workshop and helped organize the event. Attendees learned LGBTQ-related American Sign Language signs and participated in a group discussion about the intersection of Deafness and Queerness.
+
+I also organized our first and second annual Global Accessibility Awareness Day (GAAD) celebrations: a digital scavenger hunt that taught participants how to find information about disabilities, assistive technology, Web Content Accessibility Guidelines (WCAG), and more.
+
+<Image src={gaad} class="image my-4" alt="test" />
+
+## Shifting left
+As Jeanne Spellman, a now-retired Web Accessibility Engineer for W3C and TPG, said, “You do not want to end up with an automated accessibility report with hundreds (or thousands) of bugs and no way forward...That's how companies fail at digital accessibility ...It becomes a big, expensive problem that no one wants to solve.” 
+
+We had over 46,000 occurrences of automatically-detectable issues in Siteimprove. With Jeanne's words of wisdom in mind, I recommended that we focus on incorporating accessibility in new or updated experiences. I identified opportunities to shift left – moving accessibility upstream in our processes – to prevent the introduction of new issues, and encouraged my team to lead by example. 
+
+<Image src={shiftingLeft} class="image my-4" alt="test" />
+
+I led the cross-functional design system product team. We defined accessibility as one of the foundations of our design system. And we publicly documented our position and approach, along with an accessibility statement and a wealth of resources to support others on their learning journey.
+
+<figure class="my-4 decorative-treatment">
+  <blockquote>
+    The work your team has done in this space is the most thoughtful and comprehensive guidance I have seen. I'm grateful to have access to it!
+  </blockquote>
+  <figcaption>
+    — Jen Ewing, digital producer
+  </figcaption>
+</figure>
+
+I also developed a style system on top of AEM Core Components as a stop-gap to improve the accessibility of our corporate website while we established our global design system, established a partnership with 3Play Media to improve video accessibility, and identified opportunities to make small code changes with a big impact – modifying just 10 characters in a global component's code improved the accessibility scores across 24 sites by an average of 1.79 points.
+
+## Testing
+
+I learned that, if teams were conducting accessibility testing at all, they were relying on volunteers from the LEAD ERG. Teams were only capturing feedback from one or two people's perspectives, and people with disabilities were being asked to provide uncompensated labor. I expanded our partnership with Level Access and overhauled our testing practices.
+
+The design system team used a mix of automated and manual testing practices to validate our work from design through production. We used contrast checkers, Sketch and Figma plugins, keyboards and screen readers, developer tools, browser extensions, linters, and Siteimprove. We conducted user testing with people with disabilities, prioritized stories to address the findings, and documented our testing practices and preferred tools. We also conducted design reviews, code reviews, and accessibility audits for teams across the company, provided feedback on how teams could improve the accessibility of their product, and shared our testing practices to increase organizational knowledge and promote best practices.
+
+<Image src={testing} class="image my-4" alt="test" />
+
+## Measuring progress
+
+After my team inherited Boston Scientific's instance of Siteimprove, I realized we weren't fully leveraging the power of the tool. I initiated a project to operationalize the tool. I developed the project goals and SOW, hired and managed a contractor, developed an SOP, and communicated updates to our internal users. I also partnered with a product owner on our platform team to create a Jira Service Management intake form, leveraging automation to create Jira tickets for Siteimprove-related requests and help determine resourcing needed to maintain the tool.
+
+Once our instance of Siteimprove was cleaned up, I partnered with product owners across the organization to document baseline scores. I helped teams and individuals define and achieve accessibility goals, and defined KPIs and OKRs for the accessibility program to measure progress and organizational maturity.
+
+I also partnered with the Data and Analytics team to create an accessibility dashboard in Tableau. The dashboard used Siteimprove's API to calculate an accessibility score for the portfolio, display individual site scores, and track the percent change. It also surfaced WebAIM Million rankings, and the difference in ranking over time, for Boston Scientific and four competitors from 2019 to the present. The dashboard created visibility for the accessibility program during quarterly and annual readouts with senior leadership.
+
+<Image src={tableau} class="image my-4" alt="test" />
+
+## Scaling and sustaining
+
+While we've made significant progress, it's been difficult to achieve some of our larger goals without a dedicated team and company-wide accessibility policy. I developed the business case for building a dedicated accessibility team to expand internal expertise and increase disability representation. I prepared recommendations for strat plan and AOP, and presented them to senior leadership to request their support in prioritizing accessibility. I also partnered with Level Access to draft a company-wide accessibility policy, and socialized the draft with global stakeholders from HR, Legal, DE&I, IT, Marketing, Quality, Policy Central, and the LEAD ERG.
+
+<Image src={progress} class="image my-4" alt="test" />
+
+## Impact and results
+
+Our design system accessibility scores consistently exceeded targets and industry benchmarks, and adoption of our design system improved accessibility in downstream products by an average of 42%. Our WebAIM Million ranking for our corporate website increased by >574k, landing Boston Scientific in the top 25% and surpassing our competitors. 
+
+<Image src={impact} class="image mt-4" alt="test"/>
