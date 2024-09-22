@@ -27,14 +27,6 @@
   }
 }
 
-@media only screen and (min-width: 768px)
-{
-  .menu-toggle.cta-icon
-  {
-    display: none;
-  }
-}
-
 .menu-is-open
 {
   height: 100%;
@@ -124,6 +116,11 @@
 
 @media only screen and (min-width: 768px)
 {
+  .menu-toggle.menu-toggle
+  {
+    display: none;
+  }
+
   .nav-primary
   {
     display: unset;
@@ -136,25 +133,6 @@
   }
 }
 
-// // old stuff here
-
-// .cta-logo,
-// .menu-toggle
-// {
-//   min-width: $space-6x;
-//   max-width: $space-6x;
-//   min-height: $space-6x;
-//   max-height: $space-6x;
-//   margin: $space-4x;
-// }
-
-// .cta-logo
-// {
-//   display: inline-flex;
-//   position: relative;
-//   @include focus-rainbow;
-// }
-
 // did i need this for safari??
 // .logo
 // {
@@ -165,64 +143,8 @@
 .menu-toggle
 {
   @extend .cta-icon;
-  // justify-self: end;
   @include focus-rainbow;
 }
-
-// .menu
-// {
-//   // display: none;
-//   margin: 0 $space-4x $space-4x;
-
-//   // &.expanded
-//   // {
-//   //   display: unset;
-//   // }
-// }
-
-// .nav-list
-// {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0;
-//   padding: 0;
-//   gap: $space-md;
-//   font-size: $fs-subtle;
-// }
-
-// .nav-item
-// {
-//   list-style-type: none;
-// }
-
-// .link
-// {
-//   position: relative;
-//   display: inline-block;
-//   background-image: linear-gradient($neutral-darkest 0 0);
-//   background-position: left bottom;
-//   background-size: 0% $space-xs;
-//   background-repeat: no-repeat;
-//   color: $neutral-darkest;
-//   font-size: $fs-subtle;
-//   letter-spacing: $space-xs;
-//   text-transform: uppercase;
-//   text-decoration: none;
-
-//   &:hover,
-//   &:active,
-//   &.active
-//   {
-//     background-size: 100% $space-xs;
-//   }
-
-//   &:focus
-//   {
-//     outline: 0;
-//     background-image: $gradient-rainbow;
-//     background-size: 100% $space-xs;
-//   }
-// }
 
 // .mode-toggle
 // {

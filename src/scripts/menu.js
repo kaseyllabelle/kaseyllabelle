@@ -1,5 +1,3 @@
-// TODO: toggle aria-hidden="true" too?
-
 var body = document.body;
 var container = document.querySelector('[data-container]');
 var menu = document.querySelector('[data-menu]');
