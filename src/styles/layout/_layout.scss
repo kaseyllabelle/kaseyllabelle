@@ -53,13 +53,11 @@ body
 
 .app-header
 {
-  grid-column: 1 / 1;
-  grid-row: 1 / 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-area: header;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: $space-4x;
 }
 
 .app-main
@@ -153,7 +151,7 @@ body
     grid-template-columns: 25% 75%;
     grid-template-areas:
       "header main"
-      ". main"
+      "nav main"
       ". footer";
   }
 
@@ -235,7 +233,7 @@ body
     grid-template-columns: 25% 50% 25%;
     grid-template-areas:
       "header main ."
-      ". main ."
+      "nav main ."
       ". footer .";
   }
 }
@@ -247,12 +245,7 @@ body
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-areas:
       ". header main . ."
-      ". . main . ."
+      ". nav main . ."
       ". . footer . .";
-  }
-
-  .app-header
-  {
-    grid-column: 2 / 2;
   }
 }
