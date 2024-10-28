@@ -8,4 +8,8 @@ export default defineConfig({
   integrations: [mdx()],
   output: 'static',
   adapter: netlify(),
+  trailingSlash: 'never',
+  build: {
+    format: 'file',
+  },
 });
