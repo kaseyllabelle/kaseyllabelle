@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import MarkdownProjectLayout from "../../layouts/MarkdownProjectLayout.astro";
-
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
   return projects.map((project) => ({
@@ -9,7 +8,6 @@ export async function getStaticPaths() {
     props: { project },
   }));
 }
-
 const { project } = Astro.props;
 const { Content } = await project.render();
 ---
