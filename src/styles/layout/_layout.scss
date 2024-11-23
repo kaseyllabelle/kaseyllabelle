@@ -29,6 +29,35 @@ body
   color: $neutral-darkest;
 }
 
+.progress
+{
+  height: $space-sm;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: 0 50%;
+  background: $gradient-rainbow;
+  animation: clip auto linear forwards;
+  animation-timeline: scroll(root);
+  z-index: 2;
+  // try applying to card and link hover/focus
+}
+
+@keyframes clip
+{
+  0%
+  {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+
+  100%
+  {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 .app-root
 {
   height: 100%;
