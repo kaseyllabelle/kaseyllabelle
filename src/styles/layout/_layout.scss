@@ -258,7 +258,7 @@ body
 {
   .app-container
   {
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 80ch 1fr;
     grid-template-areas:
       "header main ."
       "nav main ."
@@ -266,11 +266,11 @@ body
   }
 }
 
-@media only screen and (min-width: 1800px)
+@media only screen and (min-width: 1600px)
 {
   .app-container
   {
-    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-columns: 1fr 1fr 80ch 1fr 1fr;
     grid-template-areas:
       ". header main . ."
       ". nav main . ."
