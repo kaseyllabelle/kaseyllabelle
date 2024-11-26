@@ -1,34 +1,17 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import MarkdownProjectLayout from "../../layouts/MarkdownProjectLayout.astro";
-import type { MarkdownHeading } from "astro";
-
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
-
-  const headings = await Promise.all(
-    projects.map(async (project) => {
-      const data = await project.render();
-      return data.headings;
-    }),
-  );
-
-  return projects.map((project, index) => ({
+  return projects.map((project) => ({
     params: { slug: project.slug },
-    props: { project, headings: headings[index] },
+    props: { project },
   }));
 }
-
-type Props = {
-  project: CollectionEntry<"projects">;
-  headings: MarkdownHeading[];
-};
-
-const { project, headings } = Astro.props;
+const { project } = Astro.props;
 const { Content } = await project.render();
 ---
 
-<!-- <MarkdownProjectLayout frontmatter={project.data} headings={headings}> -->
-<MarkdownProjectLayout {...project.data} headings={headings}>
+<MarkdownProjectLayout frontmatter={project.data}>
   <Content />
 </MarkdownProjectLayout>

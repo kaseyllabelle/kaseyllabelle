@@ -36,10 +36,7 @@ body
   left: 0;
   width: 100%;
   height: $space-sm;
-  // height: 5px;
-  // border-bottom: 1px solid black;
   z-index: 2;
-  // background-color: black;
 }
 
 .progress
@@ -55,7 +52,7 @@ body
   animation: clip auto linear forwards;
   animation-timeline: scroll(root);
   z-index: 2;
-  // try applying to card and link hover/focus
+  // TODO: try applying to card and link hover/focus
 }
 
 @keyframes clip
@@ -105,19 +102,17 @@ body
 .app-main
 {
   grid-area: main;
-  // padding: $space-4x;
+  padding: $space-4x;
   overflow-y: auto;
 }
 
 .section
 {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     "page-header"
-    "toc"
     "page-content";
   row-gap: $space-4x;
 
@@ -133,14 +128,10 @@ body
 .page-header
 {
   grid-area: page-header;
-  padding: 0 2rem;
 }
 
 .page-content
 {
-  grid-area: page-content;
-  padding: 0 2rem 2rem;
-
   & > *:first-child
   {
     margin-top: 0;
@@ -206,19 +197,17 @@ body
   .section
   {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "page-header ."
-      "page-content toc";
-    gap: 0;
+      "page-header"
+      "page-content";
   }
 
   .page-header
   {
     grid-area: page-header;
     line-height: $space-6x;
-    padding: 2rem;
   }
 
   .layout-info
@@ -271,20 +260,20 @@ body
   {
     grid-template-columns: 25% 50% 25%;
     grid-template-areas:
-      "header main main"
-      "nav main main"
+      "header main ."
+      "nav main ."
       ". footer .";
   }
 }
 
-@media only screen and (min-width: 1600px)
+@media only screen and (min-width: 1800px)
 {
   .app-container
   {
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-areas:
-      "header main main"
-      "nav main main"
-      ". footer .";
+      ". header main . ."
+      ". nav main . ."
+      ". . footer . .";
   }
 }
