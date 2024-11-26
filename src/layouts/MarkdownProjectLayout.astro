@@ -1,9 +1,19 @@
 ---
+import type { CollectionEntry } from "astro:content";
+import type { MarkdownHeading } from "astro";
 import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
+import TableOfContents from "../components/NavTableOfContents.astro";
+
+type Props = CollectionEntry<"projects">["data"] & {
+  headings: MarkdownHeading[];
+};
+const { title, headings } = Astro.props;
+
+// const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
+<BaseLayout pageTitle={title}>
+  <TableOfContents headings={headings} />
   <div class="page-content">
     <slot />
   </div>
