@@ -219,7 +219,7 @@ body
 {
   .app-container
   {
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 1fr 80ch 1fr;
     grid-template-areas:
       "header main ."
       "nav main ."
@@ -231,7 +231,7 @@ body
 {
   .app-container
   {
-    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-columns: 1fr 1fr 80ch 1fr 1fr;
     grid-template-areas:
       ". header main . ."
       ". nav main . ."
